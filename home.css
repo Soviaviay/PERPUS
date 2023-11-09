@@ -1,0 +1,30 @@
+/* CSS untuk slider gambar */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS untuk responsifitas */
+@media (max-width: 768px) {
+    .slider img {
+        max-width: 80%; /* Atur ukuran gambar untuk layar yang lebih kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    .slider img {
+        max-width: 70%; /* Atur ukuran gambar untuk layar yang lebih kecil */
+    }
+}
+
+/* Gaya lainnya sesuai kebutuhan */

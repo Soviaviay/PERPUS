@@ -1,0 +1,24 @@
+.nav-link i {
+    margin-right: 8px; /* Atur jarak kanan antara ikon dan teks */
+}
+.nav-item {
+    margin-right: 15px; /* Atur jarak vertikal antara tautan "Beranda" dan "Buku Saya" */
+}
+
+/* Atur warna teks menjadi hijau ketika aktif */
+.navbar.navbar-light .navbar-brand.active,
+.navbar.navbar-light .navbar-brand:active,
+.navbar.navbar-light .navbar-brand.show,
+.navbar.navbar-light .navbar-brand:hover,
+.navbar.navbar-light .navbar-brand:focus {
+    color: green;
+}
+
+/* Atur warna teks menjadi hijau ketika tautan dalam navbar aktif */
+.navbar.navbar-light .nav-link.active,
+.navbar.navbar-light .nav-link:active,
+.navbar.navbar-light .nav-link.show,
+.navbar.navbar-light .nav-link:hover,
+.navbar.navbar-light .nav-link:focus {
+    color: green;
+}
