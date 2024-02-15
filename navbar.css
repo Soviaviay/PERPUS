@@ -1,9 +1,24 @@
+.navbar {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand {
+    margin-right: auto; /* Menempatkan logo di sebelah kiri */
+}
+.navbar-nav .nav-item {
+    margin: 15px 0; /* Adjust the spacing as needed */
+}
+.navbar-nav .nav-link {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
 .nav-link i {
-    margin-right: 8px; /* Atur jarak kanan antara ikon dan teks */
+    margin-right: 5px; /* Atur jarak kanan antara ikon dan teks */
 }
-.nav-item {
-    margin-right: 15px; /* Atur jarak vertikal antara tautan "Beranda" dan "Buku Saya" */
-}
+
+
+
 
 /* Atur warna teks menjadi hijau ketika aktif */
 .navbar.navbar-light .navbar-brand.active,
@@ -21,4 +36,114 @@
 .navbar.navbar-light .nav-link:hover,
 .navbar.navbar-light .nav-link:focus {
     color: green;
+}
+
+
+/* CSS untuk responsifitas */
+@media (min-width: 768px) and (max-width: 1500px) {
+    .navbar-brand img {
+        width: 60px; /* Atur ukuran logo untuk mode tablet */
+    }
+    .navbar {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-brand {
+        margin-right: 0; /* Logo di pojok kiri */
+    }
+    .navbar-nav {
+        flex-grow: 1; /* Menu berada di tengah */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .navbar-nav .nav-item {
+        margin: 15px 15px; /* Adjust the spacing as needed */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 55px; /* Atur ukuran logo untuk mode tablet */
+    }
+    /* Add this style for overlay effect */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        z-index: 1000;
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column; /* Stack elements vertically in mobile mode */
+        align-items: center; /* Center items horizontally in mobile mode */
+    }
+
+    /* Add this style for mobile menu */
+    .navbar-nav {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* Adjust the background color as needed */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1001; /* Higher z-index to make sure it's on top of the overlay */
+        display: none;
+    }
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .navbar-brand {
+        margin-right: 0; /* Remove margin for the logo */
+    }
+
+    .navbar-toggler {
+        margin-top: 10px; /* Adjust top margin as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 52px; /* Atur ukuran logo untuk mode mobile */
+    }
+
+/* Add this style for mobile menu */
+.popup-menu {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Tambahkan style ini untuk menyembunyikan menu popup secara default */
+    display: none;
+  }
+  
+
+.popup-menu.show {
+    display: block;
+}
+
+.popup-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-menu a:hover {
+    background-color: #f0f0f0;
+}
 }

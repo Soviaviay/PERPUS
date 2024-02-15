@@ -8,7 +8,6 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      <!-- Include FontAwesome CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
- 
      <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -17,16 +16,90 @@
 
 <!-- Slider Gambar -->
 <div class="slider-container">
+    <button class="prev"><i class="fas fas fa-chevron-left"></i></button>
     <div class="slider">
         <img src="file/lex.png" alt="Gambar 1">
-        <img src="file/xodiac.png" alt="Gambar 2">
+        <img src="file/malin.jpg" alt="Gambar 2">
         <img src="file/lex.png" alt="Gambar 3">
+    </div>
+    <button class="next"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- Kotak Pencarian dan Filter -->
+<div class="search-filter-container">
+    <div class="search-input-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Cari...">
+    </div>
+    <button class="filter-btn"><i class="fas fa-filter"></i></button>
+</div>
+
+<!-- Daftar Rekomendasi Buku -->
+<div class="recommendations">
+    <h2>
+        Rekomendasi untuk Pemula
+        <p><a href="#">Lihat Semua</a></p>
+        <button class="prev-book"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-book"><i class="fas fa-chevron-right"></i></button>
+    </h2>
+    <div class="book-slider">
+        <div class="book-list">
+            <!-- List buku ditampilkan di sini -->
+            <div class="book">
+                <img src="file/malinkundang.jpg" alt="Buku 1" class="book-cover">
+                <p class="book-title">Judul Buku 1</p>
+            </div>
+            <div class="book">
+                <img src="file/timunmas.jpg" alt="Buku 2" class="book-cover">
+                <p class="book-title">Judul Buku 2</p>
+            </div>
+            <div class="book">
+                <img src="file/hutanhantu.jpg" alt="Buku 3" class="book-cover">
+                <p class="book-title">Judul Buku 3</p>
+            </div>
+            <div class="book">
+                <img src="file/buah ajaib.jpg" alt="Buku 4" class="book-cover">
+                <p class="book-title">Judul Buku 4</p>
+            </div>
+            <div class="book">
+                <img src="file/misteri kunci.jpg" alt="Buku 5" class="book-cover">
+                <p class="book-title">Judul Buku 5</p>
+            </div>
+            <div class="book">
+                <img src="file/malinkundang.jpg" alt="Buku 6" class="book-cover">
+                <p class="book-title">Judul Buku 6</p>
+            </div>
+            <div class="book">
+                <img src="file/timunmas.jpg" alt="Buku 7" class="book-cover">
+                <p class="book-title">Judul Buku 7</p>
+            </div>
+            <div class="book">
+                <img src="file/hutanhantu.jpg" alt="Buku 8" class="book-cover">
+                <p class="book-title">Judul Buku 8</p>
+            </div>
+            <div class="book">
+                <img src="file/buah ajaib.jpg" alt="Buku 9" class="book-cover">
+                <p class="book-title">Judul Buku 9</p>
+            </div>
+            <div class="book">
+                <img src="file/misteri kunci.jpg" alt="Buku 10" class="book-cover">
+                <p class="book-title">Judul Buku 10</p>
+            </div>
+            <!-- Tambahkan buku sesuai kebutuhan -->
+        </div>
     </div>
 </div>
 
-<!-- Content for Home Page -->
-    <h1>Halaman Beranda</h1>
-    <p>Konten halaman Beranda Anda disini.</p>
+<!-- Pop-up Box -->
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <button class="close-popup" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <img src="" alt="Buku" id="popupBookImage">
+        <h3 id="popupBookTitle">Judul Buku</h3>
+        <p id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+    </div>
+</div>
+
 
 <!-- Include JavaScript file terpisah -->
 <script src="home.js"></script>

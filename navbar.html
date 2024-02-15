@@ -13,9 +13,13 @@
 </head>
 <body>
 
+   <!-- Tambahkan elemen dengan id "navbar-container" di sini -->
+<div id="navbar-container">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container"> <!-- Tambahkan container untuk menyusun elemen di dalamnya -->
     <a class="navbar-brand" href="#">
-        <img src="file/F5Q2YKfaUAAX4Av-removebg-preview.png" alt="Your Logo" width="30" height="30"> RAJIN BACA
+        <img src="file/logo.png" alt="Your Logo" class="logo"> <!--MADRASAH KARAKTER MUTIARA BUNDA-->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,13 +36,27 @@
                 <a class="nav-link" href="profil.html"><i class="fas fa-user"></i> Profil</a>
             </li>
         </ul>
-        
     </div>
+    
+    </div>  
 </nav>
+</div>
+
+<!-- Add this div for overlay effect -->
+<div class="overlay"></div>
+
+<!-- Bagian Menu Popup -->
+<div class="popup-menu">
+    <a href="home.html">Beranda</a>
+    <a href="bukusaya.html">Buku Saya</a>
+    <a href="profil.html">Profil</a>
+</div>
 
 <!-- Include Bootstrap JS (Optional) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
