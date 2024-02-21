@@ -16,7 +16,7 @@
 
 <!-- Slider Gambar -->
 <div class="slider-container">
-    <button class="prev"><i class="fas fas fa-chevron-left"></i></button>
+    <button class="prev"><i class="fas fa-chevron-left"></i></button>
     <div class="slider">
         <img src="file/lex.png" alt="Gambar 1">
         <img src="file/malin.jpg" alt="Gambar 2">
@@ -45,68 +45,93 @@
     <div class="book-slider">
         <div class="book-list">
             <!-- List buku ditampilkan di sini -->
-            <div class="book">
-                <img src="file/malinkundang.jpg" alt="Buku 1" class="book-cover">
-                <p class="book-title">Judul Buku 1</p>
+            <div class="book-list">
+                <div class="book" data-info="Informasi tambahan mengenai buku 1." onclick="showBookPopup('file/malinkundang.jpg', 'Judul Buku 1', 'Informasi tambahan mengenai buku 1.')">
+                    <div class="book-cover">
+                        <img src="file/malinkundang.jpg" alt="Buku 1">
+                    </div>
+                    <p class="book-title">Judul Buku 1</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 2." onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Informasi tambahan mengenai buku 2.')">
+                    <div class="book-cover">
+                        <img src="file/timunmas.jpg" alt="Buku 2">
+                    </div>
+                    <p class="book-title">Judul Buku 2</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 3." onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Informasi tambahan mengenai buku 3.')">
+                    <div class="book-cover">
+                        <img src="file/hutanhantu.jpg" alt="Buku 3">
+                    </div>
+                    <p class="book-title">Judul Buku 3</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 4." onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Informasi tambahan mengenai buku 4.')">
+                    <div class="book-cover">
+                        <img src="file/buah ajaib.jpg" alt="Buku 4">
+                    </div>
+                    <p class="book-title">Judul Buku 4</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 5." onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Informasi tambahan mengenai buku 5.')">
+                    <div class="book-cover">
+                        <img src="file/misteri kunci.jpg" alt="Buku 5">
+                    </div>
+                    <p class="book-title">Judul Buku 5</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 6." onclick="showBookPopup('file/malinkundang.jpg', 'Judul Buku 6', 'Informasi tambahan mengenai buku 6.')">
+                    <div class="book-cover">
+                        <img src="file/malinkundang.jpg" alt="Buku 6">
+                    </div>
+                    <p class="book-title">Judul Buku 6</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 7." onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 7', 'Informasi tambahan mengenai buku 7.')">
+                    <div class="book-cover">
+                        <img src="file/timunmas.jpg" alt="Buku 7">
+                    </div>
+                    <p class="book-title">Judul Buku 7</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 8." onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 8', 'Informasi tambahan mengenai buku 8.')">
+                    <div class="book-cover">
+                        <img src="file/hutanhantu.jpg" alt="Buku 8">
+                    </div>
+                    <p class="book-title">Judul Buku 8</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 9." onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 9', 'Informasi tambahan mengenai buku 9.')">
+                    <div class="book-cover">
+                        <img src="file/buah ajaib.jpg" alt="Buku 9">
+                    </div>
+                    <p class="book-title">Judul Buku 9</p>
+                </div>
+                <div class="book" data-info="Informasi tambahan mengenai buku 10." onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 10', 'Informasi tambahan mengenai buku 10.')">
+                    <div class="book-cover">
+                        <img src="file/misteri kunci.jpg" alt="Buku 10">
+                    </div>
+                    <p class="book-title">Judul Buku 10</p>
+                </div>
+                <!-- Tambahkan buku sesuai kebutuhan -->
             </div>
-            <div class="book">
-                <img src="file/timunmas.jpg" alt="Buku 2" class="book-cover">
-                <p class="book-title">Judul Buku 2</p>
-            </div>
-            <div class="book">
-                <img src="file/hutanhantu.jpg" alt="Buku 3" class="book-cover">
-                <p class="book-title">Judul Buku 3</p>
-            </div>
-            <div class="book">
-                <img src="file/buah ajaib.jpg" alt="Buku 4" class="book-cover">
-                <p class="book-title">Judul Buku 4</p>
-            </div>
-            <div class="book">
-                <img src="file/misteri kunci.jpg" alt="Buku 5" class="book-cover">
-                <p class="book-title">Judul Buku 5</p>
-            </div>
-            <div class="book">
-                <img src="file/malinkundang.jpg" alt="Buku 6" class="book-cover">
-                <p class="book-title">Judul Buku 6</p>
-            </div>
-            <div class="book">
-                <img src="file/timunmas.jpg" alt="Buku 7" class="book-cover">
-                <p class="book-title">Judul Buku 7</p>
-            </div>
-            <div class="book">
-                <img src="file/hutanhantu.jpg" alt="Buku 8" class="book-cover">
-                <p class="book-title">Judul Buku 8</p>
-            </div>
-            <div class="book">
-                <img src="file/buah ajaib.jpg" alt="Buku 9" class="book-cover">
-                <p class="book-title">Judul Buku 9</p>
-            </div>
-            <div class="book">
-                <img src="file/misteri kunci.jpg" alt="Buku 10" class="book-cover">
-                <p class="book-title">Judul Buku 10</p>
-            </div>
-            <!-- Tambahkan buku sesuai kebutuhan -->
-        </div>
+
     </div>
 </div>
 
 <!-- Pop-up Box -->
 <div class="popup-container" id="popupContainer">
     <div class="popup">
-        <button class="close-popup" onclick="closePopup()"><i class="fas fa-times"></i></button>
-        <img src="" alt="Buku" id="popupBookImage">
-        <h3 id="popupBookTitle">Judul Buku</h3>
-        <p id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+        <button class="close-popup" id="closePopupButton" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <div class="popup-content">
+            <img src="" alt="Buku" id="popupBookImage">
+            <h3 id="popupBookTitle">Judul Buku</h3>
+            <p id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+        </div>
     </div>
 </div>
 
 
-<!-- Include JavaScript file terpisah -->
-<script src="home.js"></script>
 
 <!-- Include Bootstrap JS (Optional) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Include JavaScript file terpisah -->
+<script src="home.js"></script>
 </body>
 </html>
