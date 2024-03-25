@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
-     <!-- Include Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-     <!-- Include FontAwesome CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
- 
-     <link rel="stylesheet" href="profil.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="profil.css">
 </head>
 <body>
-<!-- Include the Navbar Template -->
+    <!-- Include the Navbar Template -->
     <div id="navbar-container"></div>
 
-    <!-- Content for Home Page -->
-    <h1>Halaman Profil</h1>
-    <p>Konten halaman Beranda Anda disini.</p>
+<!-- Content for Profile Page -->
+<div class="profil-container">
+    <div class="profil-text">
+        <p>Selamat Datang di Halaman Profil!</p>
+    </div>
+    <div class="profile-image">
+        <img src="file/profil/1.jpg" alt="Ilustrasi Hewan">
+        <button class="btn btn-danger delete-profile-btn" id="delete-profile-btn" style="display: none;">
+            <i class="fas fa-trash"></i>
+        </button>
+    </div>
+    <div class="create-profile-button">
+        <button class="btn btn-primary" id="edit-profile-btn">Ubah Profil</button>
+    </div>
+</div>
+
+<!-- Profile Modal -->
+<div id="profile-modal" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center w-100">Ubah Profil</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="text-left">
+                    <label for="name">Siapakah Namamu?</label>
+                    <input type="text" id="name" class="form-control mb-3">
+                    <p>Gambar mana yang kamu suka?</p>
+                    <div class="profile-images">
+                        <!-- Tempat untuk menampilkan gambar-gambar profil -->
+                        <!-- Anda tidak perlu menambahkan gambar di sini, karena gambar-gambar akan ditambahkan melalui JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary" id="save-profile">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Include JavaScript file terpisah -->
 <script src="profil.js"></script>
 
-<!-- Include Bootstrap JS (Optional) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include JavaScript file terpisah -->
+    <script src="profil.js"></script>
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

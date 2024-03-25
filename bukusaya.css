@@ -1,0 +1,37 @@
+/* bukusaya.css */
+.icon-container {
+    width: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.icon {
+    width: 50px;
+    height: 40px;
+    line-height: 50px;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    color: #999999; /* Warna abu yang agak lebih gelap dalam format heksadesimal */
+}
+
+/* Mengubah warna ikon saat dihover */
+.icon:hover {
+    color: green; /* Warna ikon hijau saat dihover */
+}
+
+/* Mengubah warna ikon saat aktif */
+.icon:active {
+    color: green; /* Warna ikon hijau saat aktif */
+}

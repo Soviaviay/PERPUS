@@ -8,10 +8,14 @@
 
 .slider {
     display: flex;
-    width: 300%; /* Lebar slider sesuai dengan lebar banner (jumlah gambar * 100%) */
-    height: 100%; /* Tinggi slider sesuai dengan tinggi banner */
-    transition: transform 0.5s ease-in-out;
+    width: 300%;
+    /*Lebarslidersesuaidenganlebarbanner(jumlahgambar*100%)*/height: 100%;
+    /*Tinggislidersesuaidengantinggibanner*/transition: transform 0.5s ease-in-out;
     position: relative;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
 }
 
 .slider img {
@@ -197,8 +201,8 @@
 .popup {
     background: none;
     width: auto;
-    max-width: 55%;
-    height: 95%;
+    max-width: 50%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -222,7 +226,8 @@
 .popup-content {
     background: #fff;
     padding-top: 40px;
-    height: 100%;
+    max-height: 95vh; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
+    overflow-y: auto; /* Aktifkan scrolling vertikal jika kontennya lebih panjang */
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -230,8 +235,9 @@
     -o-border-radius: 13px;
 }
 
+
 .popup img {
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -248,10 +254,20 @@
     margin-bottom: 10px;
 }
 
-.popup p {
+.popupBookAuthor {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto; /* Memberikan auto margin untuk menengahkan elemen */
+}
+
+.popupBookInfo {
     color: #666;
     font-size: 1em;
     line-height: 1.4;
+    text-align: justify; 
+    max-width: 400px;
+    margin: 15px auto; 
+    margin-bottom: 40px;
 }
 
 .close-popup {
@@ -267,4 +283,294 @@
 
 .close-popup:hover {
     color: #333;
+}
+
+
+/* CSS untuk tombol Baca dan Download pada pop-up */
+.popup-content .read-button,
+.popup-content .download-button,
+.popup-content .favorite-button {
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.popup-content .read-button {
+    background-color: #28a745; /* Warna hijau */
+    color: #fff; /* Warna teks putih */
+    border-radius: 8px;
+    padding: 12px 120px; 
+    margin-right: 5px;
+}
+
+.popup-content .read-button i {
+    margin-right: 8px; /* Menambah jarak antara ikon dan teks "Baca" */
+}
+
+.popup-content .read-button:hover {
+    background-color: #218838; /* Warna hijau yang sedikit lebih gelap saat dihover */
+}
+
+.popup-content .download-button,
+.popup-content .favorite-button {
+    background-color: white;
+    border-radius: 8px;
+    font-size: 30px;
+    display: inline-flex;
+    color: rgb(129, 128, 128);
+    vertical-align: middle;
+}
+
+.download-button .material-icons {
+    font-size: 33px;
+    outline: none;
+}
+
+/* Informasi Halaman pada Pop-up */
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 117px;
+    max-width: 400px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#combinedBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px 0 15px 210px;
+    width: 220px;
+    height: 105px;
+    position: relative;
+}
+
+#combinedBox .info-label::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ddd; /* Garis horizontal tipis */
+    width: 250%; 
+    margin-top: 5px; 
+    margin-left: -75%;
+}
+
+.info-label,
+.info-angka {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-angka {
+    font-size: 30px;
+}
+
+/* Gaya untuk ilustrator, kategori, original URL, dan lisensi */
+#ilustratorBox,
+#kategoriBox,
+#originalURLBox,
+#lisensiBox {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+/* Gaya bold hanya untuk judul, bukan teks isian */
+#ilustratorBox .info-label,
+#kategoriBox .info-label,
+#originalURLBox .info-label,
+#lisensiBox .info-label {
+    font-weight: bold;
+}
+
+.info-text {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    text-decoration: underline;
+}
+
+.info-link {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+#lisensiBox {
+    margin-bottom: 50px;
+}
+
+
+
+/* CSS UNTUK KATEGORI BUKU */
+.category-container {
+    margin-top: 30px;
+    margin-left: 23%; /* Memberikan jarak di kiri container */
+    margin-right: 20%; /* Memberikan jarak di kanan container */
+}
+
+.category-container h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.category-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Mengatur kotak ke tengah */
+}
+
+.category-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 35px; /* Atur jarak di kanan kotak */
+    margin-bottom: 35px; /* Atur jarak di bawah kotak */
+    cursor: pointer;
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Memposisikan teks di bagian bawah */
+}
+
+.category-box span {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* Memberikan jarak antara teks dan bawah kotak */
+}
+
+/* Hover effect */
+.category-box:hover {
+    background-color: #f5f5f5;
+}
+
+.category-box img {
+    width: 90px; /* Mengatur lebar gambar */
+    height: 90px; /* Mengatur tinggi gambar */
+    align-self: center;
+    margin-bottom: 40px; /* Memberikan jarak antara gambar dan teks */
+}
+
+
+/* CSS untuk Kontainer Motivasi */
+.motivation-container {
+    text-align: center;
+    margin-left: 15%; /* Memberikan jarak di kiri container */
+    margin-right: 15%;
+}
+
+.motivation-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    color: orange;
+}
+
+.motivation-container h3 {
+    font-size: 30px;
+}
+
+.motivation-box {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 700px;
+}
+
+.quotation-mark {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.motivation-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.teacher-info {
+    margin-top: 20px;
+}
+
+.teacher-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.teacher-details h3 {
+    margin-bottom: 5px;
+}
+
+.teacher-role {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* CSS untuk Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.school-logo img {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+.school-info {
+    text-align: center;
+}
+
+.footer-links ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a,
+.social-media a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+    color: #555;
 }

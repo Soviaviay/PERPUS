@@ -81,23 +81,32 @@ document.addEventListener('DOMContentLoaded', function () {
         smoothScroll(bookSlider.scrollLeft + 300, 500);
     });
 
-    // Fungsi untuk menutup pop-up
-    function closePopup() {
-        console.log('Closing popup');
-        document.getElementById('popupContainer').style.display = 'none';
-    }
 
-    // Fungsi untuk menutup pop-up
-    function closePopup() {
-        console.log('Closing popup');
-        document.getElementById('popupContainer').style.display = 'none';
+    // Fungsi untuk membuka buku dalam PDF Viewer pada halaman yang sama
+    function readBook(url) {
+        // Ambil URL buku dari pop-up dan tampilkan dalam PDF Viewer
+        const pdfViewer = document.getElementById('pdfViewer');
+        pdfViewer.src = url;
     }
-
-    // Fungsi untuk menampilkan pop-up dengan informasi buku
-    function showBookPopup(imageSrc, title, info) {
+    
+    // Fungsi untuk menampilkan pop-up buku
+    function showBookPopup(imageSrc, title, author, info, halaman, bookUrl, ilustrator, kategori, originalURL, lisensi) {
         document.getElementById('popupBookImage').src = imageSrc;
         document.getElementById('popupBookTitle').innerText = title;
+        document.getElementById('popupBookAuthor').innerText = author;
         document.getElementById('popupBookInfo').innerText = info;
+        document.getElementById('popupBookHalaman').innerText = halaman; // Update jumlah halaman
+        document.getElementById('popupIlustrator').innerText = ilustrator; // Update ilustrator
+        document.getElementById('popupKategori').innerText = kategori; // Update kategori
+        document.getElementById('popupOriginalURL').href = originalURL; // Update URL asli
+        document.getElementById('popupLisensi').innerText = lisensi; // Update lisensi
+
+        // Set URL buku untuk tombol "Baca" dan "Download"
+        if (bookUrl) {
+            document.querySelector('.read-button').setAttribute('onclick', 'readBook(\'' + bookUrl + '\')');
+            document.querySelector('.download-button').setAttribute('onclick', 'downloadBook(\'' + bookUrl + '\')');
+        }
+
         document.getElementById('popupContainer').style.display = 'block';
     }
 
@@ -108,13 +117,27 @@ document.addEventListener('DOMContentLoaded', function () {
         cover.addEventListener('click', function () {
             var parentBook = this.closest('.book');
             var title = parentBook.querySelector('.book-title').innerText;
+            var author = parentBook.getAttribute('data-author');
             var info = parentBook.getAttribute('data-info');
             var imageSrc = this.src;
+            var halaman = parentBook.getAttribute('data-halaman');
+            var ilustrator = parentBook.getAttribute('data-ilustrator');
+            var kategori = parentBook.getAttribute('data-kategori');
+            var originalURL = parentBook.getAttribute('data-url');
+            var lisensi = parentBook.getAttribute('data-lisensi');
+            var bookUrl = parentBook.getAttribute('data-src');
 
-            showBookPopup(imageSrc, title, info);
+            showBookPopup(imageSrc, title, author, info, halaman, bookUrl, ilustrator, kategori, originalURL, lisensi);
         });
     });
 
-    // Menangani tombol X pada popup
+        //Fungsi untuk menutup pop-up 
+        function closePopup() {
+            console.log('Closing popup');
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+    
+    //<!-- Menangani tombol X pada popup -->
     document.getElementById('closePopupButton').addEventListener('click', closePopup);
+
 });

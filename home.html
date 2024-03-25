@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      <!-- Include FontAwesome CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
      <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -46,69 +47,92 @@
         <div class="book-list">
             <!-- List buku ditampilkan di sini -->
             <div class="book-list">
-                <div class="book" data-info="Informasi tambahan mengenai buku 1." onclick="showBookPopup('file/malinkundang.jpg', 'Judul Buku 1', 'Informasi tambahan mengenai buku 1.')">
+                <!-- Buku 1 -->
+                <div class="book" 
+                    data-info="Tiwi gajah yang mempunyai belalai panjang. Tiwi senang bisa membantu orang dengan belalainya."
+                    data-author="Endri Kris Junprihatina"
+                    data-halaman="16"
+                    data-ilustrator="Hutami Dwijayanti"
+                    data-kategori="Hewan"
+                    data-url="https://api.bookbotkids.workers.dev/books/2fb5783e-7814-4e21-b422-e384408e64a7/Belalai%20Tiwi.pdf"
+                    data-src="Buku/Belalai Tiwi.pdf"
+                    data-lisensi="CC BY-NC 4.0."
+                    onclick="showBookPopup('file/buku/Belalai Tiwi.png', 'Belalai Tiwi', 'Endri Kris Junprihatina', 'Informasi tambahan mengenai buku 1.', '16', 'URL_Buku_1', 'ilustrator 1', 'Kategori 1', 'URL 1', 'lisensi 1')">
                     <div class="book-cover">
-                        <img src="file/malinkundang.jpg" alt="Buku 1">
+                        <img src="file/buku/Belalai Tiwi.png" alt="Buku 1">
                     </div>
-                    <p class="book-title">Judul Buku 1</p>
+                    <p class="book-title">Belalai Tiwi</p>
                 </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 2." onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Informasi tambahan mengenai buku 2.')">
+
+                <!-- Buku 2 -->
+                <div class="book" 
+                    data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
+                    data-author="Fongsamay Phommaxay"
+                    data-halaman="10"
+                    data-ilustrator="Nivong Sengsakoun"
+                    data-kategori="Kehidupan"
+                    data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
+                    data-src="Buku/Aku Sayang Ibu.pdf"
+                    data-lisensi="CC BY-NC 4.0."
+                    onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
                     <div class="book-cover">
-                        <img src="file/timunmas.jpg" alt="Buku 2">
+                        <img src="file/buku/Aku sayang ibu.png" alt="Buku 2">
                     </div>
-                    <p class="book-title">Judul Buku 2</p>
+                    <p class="book-title">Aku Sayang Ibu</p>
                 </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 3." onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Informasi tambahan mengenai buku 3.')">
+
+                <!-- Buku 3 -->
+                <div class="book" 
+                    data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
+                    data-author="Nimmy Chacko" 
+                    data-halaman="12"
+                    data-ilustrator="Lavania Naidu"
+                    data-kategori="Kehidupan"
+                    data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
+                    data-src="Buku/Bersama Sahabat.pdf"
+                    data-lisensi="CC BY-NC 4.0."
+                    onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
                     <div class="book-cover">
-                        <img src="file/hutanhantu.jpg" alt="Buku 3">
+                        <img src="file/buku/Bersama Sahabat.png" alt="Buku 3">
                     </div>
-                    <p class="book-title">Judul Buku 3</p>
+                    <p class="book-title">Bersama Sahabat</p>
                 </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 4." onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Informasi tambahan mengenai buku 4.')">
+
+                <!-- Buku 4 -->
+                <div class="book" 
+                    data-info="Informasi tambahan mengenai buku 4." 
+                    data-author="Penulis Buku 4" 
+                    data-halaman="50"
+                    data-ilustrator="Ilustrator 4"
+                    data-kategori="Kategori 4"
+                    data-url="URL 4"
+                    data-src="Aku_Sayang_Ibu.pdf"
+                    data-lisensi="Lisensi 4"
+                    onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Penulis Buku 4', 'Informasi tambahan mengenai buku 4.', '50', 'URL_Buku_4', 'ilustrator 4', 'Kategori 4', 'URL 4', 'lisensi 4')">
                     <div class="book-cover">
                         <img src="file/buah ajaib.jpg" alt="Buku 4">
                     </div>
                     <p class="book-title">Judul Buku 4</p>
                 </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 5." onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Informasi tambahan mengenai buku 5.')">
+
+                <!-- Buku 5 -->
+                <div class="book" 
+                    data-info="Informasi tambahan mengenai buku 5." 
+                    data-author="Penulis Buku 5" 
+                    data-halaman="50"
+                    data-ilustrator="Ilustrator 5"
+                    data-kategori="Kategori 5"
+                    data-url="URL 5"
+                    data-src="Aku_Sayang_Ibu.pdf"
+                    data-lisensi="Lisensi 5"
+                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
                     <div class="book-cover">
                         <img src="file/misteri kunci.jpg" alt="Buku 5">
                     </div>
                     <p class="book-title">Judul Buku 5</p>
-                </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 6." onclick="showBookPopup('file/malinkundang.jpg', 'Judul Buku 6', 'Informasi tambahan mengenai buku 6.')">
-                    <div class="book-cover">
-                        <img src="file/malinkundang.jpg" alt="Buku 6">
-                    </div>
-                    <p class="book-title">Judul Buku 6</p>
-                </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 7." onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 7', 'Informasi tambahan mengenai buku 7.')">
-                    <div class="book-cover">
-                        <img src="file/timunmas.jpg" alt="Buku 7">
-                    </div>
-                    <p class="book-title">Judul Buku 7</p>
-                </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 8." onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 8', 'Informasi tambahan mengenai buku 8.')">
-                    <div class="book-cover">
-                        <img src="file/hutanhantu.jpg" alt="Buku 8">
-                    </div>
-                    <p class="book-title">Judul Buku 8</p>
-                </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 9." onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 9', 'Informasi tambahan mengenai buku 9.')">
-                    <div class="book-cover">
-                        <img src="file/buah ajaib.jpg" alt="Buku 9">
-                    </div>
-                    <p class="book-title">Judul Buku 9</p>
-                </div>
-                <div class="book" data-info="Informasi tambahan mengenai buku 10." onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 10', 'Informasi tambahan mengenai buku 10.')">
-                    <div class="book-cover">
-                        <img src="file/misteri kunci.jpg" alt="Buku 10">
-                    </div>
-                    <p class="book-title">Judul Buku 10</p>
-                </div>
-                <!-- Tambahkan buku sesuai kebutuhan -->
+                </div>    
             </div>
-
+        </div>
     </div>
 </div>
 
@@ -117,13 +141,176 @@
     <div class="popup">
         <button class="close-popup" id="closePopupButton" onclick="closePopup()"><i class="fas fa-times"></i></button>
         <div class="popup-content">
+            <!-- Informasi buku -->
             <img src="" alt="Buku" id="popupBookImage">
             <h3 id="popupBookTitle">Judul Buku</h3>
-            <p id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+            <p class="popupBookAuthor" id="popupBookAuthor">Penulis: </p>
+            <!-- Tombol Baca dan Download -->
+            <button class="read-button" onclick="readBook()">
+                <i class="fas far fas fa-book-open"></i>Baca
+            </button>
+            <button class="favorite-button" onclick="toggleFavorite()">
+                <i class="far fa-heart" style="vertical-align: middle;"></i>
+            </button>            
+            </button>
+            <button class="download-button" onclick="downloadBook()">
+                <span class="material-icons">vertical_align_bottom</span>
+            </button>
+            <!-- Sinopsis buku -->
+            <p class="popupBookInfo" id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+            <!-- Informasi halaman -->
+            <div class="info-box" id="combinedBox">
+                <span class="info-label" id="popupHalamanLabel">Halaman</span>
+                <span class="info-angka" id="popupBookHalaman">Angka</span>
+            </div>            
+            
+            <div class="info-box" id="ilustratorBox">
+                <span class="info-label">Ilustrator</span>
+                <span class="info-text" id="popupIlustrator">Nama Ilustrator</span>
+            </div>
+            <div class="info-box" id="kategoriBox">
+                <span class="info-label">Kategori</span>
+                <span class="info-text" id="popupKategori">Nama Kategori</span>
+            </div>
+            <div class="info-box" id="originalURLBox">
+                <span class="info-label">Original URL</span>
+                <a href="#" class="info-link" id="popupOriginalURL" target="_blank">Link Original</a>
+            </div>
+            <div class="info-box" id="lisensiBox">
+                <span class="info-label">Lisensi</span>
+                <span class="info-text" id="popupLisensi">Jenis Lisensi</span>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<!-- Kontainer Kategori Buku -->
+<div class="category-container">
+    <h2>Kategori Buku</h2>
+    <div class="category-boxes">
+        <div class="category-box">
+            <img src="file/kategori/cerita rakyat.png" alt="Cerita Rakyat">
+            <span>Cerita Rakyat</span>
+        </div>        
+        <div class="category-box">
+            <span>Kehidupan</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/non-fiksi.png" alt="">
+            <span>Non-Fiksi</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/sain.png" alt="">
+            <span>Sains</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/seni&musik.png" alt="">
+            <span>Seni & Musik</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/hewan.png" alt="">
+            <span>Hewan</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/berpikir keritis.png" alt="">
+            <span>Berpikir Kritis</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/lucu.png" alt="">
+            <span>Lucu</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/petualangan.png" alt="">
+            <span>Petualangan</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/pahlawan.png" alt="">
+            <span>Pahlawan</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/keluarga&sahabat.png" alt="">
+            <span>Keluarga & Persahabatan</span>
+        </div>
+        <div class="category-box">
+            <img src="file/kategori/alam.png" alt="">
+            <span>Alam</span>
         </div>
     </div>
 </div>
 
+
+<!-- Kontainer Motivasi -->
+<div class="motivation-container">
+    <h2>MOTIFASI</h2>
+    <h3>Dari Para Pengajar Untuk Murid</h3>
+    <div class="motivation-box">
+        <div class="quotation-mark">"</div>
+        <p class="motivation-text">Teks motivasi dari guru pertama.</p>
+        <div class="teacher-info">
+            <img src="file/guru1.jpeg" alt="Foto Guru 1">
+            <div class="teacher-details">
+                <h4>Nama Guru 1</h4>
+                <p class="teacher-role">Keterangan Guru</p>
+            </div>
+        </div>
+    </div>
+    <div class="motivation-box">
+        <div class="quotation-mark">"</div>
+        <p class="motivation-text">Teks motivasi dari guru kedua.</p>
+        <div class="teacher-info">
+            <img src="file/guru2.jpeg" alt="Foto Guru 2">
+            <div class="teacher-details">
+                <h4>Nama Guru 2</h4>
+                <p class="teacher-role">Keterangan Guru</p>
+            </div>
+        </div>
+    </div>
+    <div class="motivation-box">
+        <div class="quotation-mark">"</div>
+        <p class="motivation-text">Teks motivasi dari guru ketiga.</p>
+        <div class="teacher-info">
+            <img src="file/guru4.jpeg" alt="Foto Guru 3">
+            <div class="teacher-details">
+                <h4>Nama Guru 3</h4>
+                <p class="teacher-role">Keterangan Guru</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo Sekolah -->
+        <div class="school-logo">
+            <img src="file/logo.png" alt="Logo Sekolah">
+        </div>
+        <!-- Informasi Sekolah -->
+        <div class="school-info">
+            <h4>Sekolah Karakter Mutiara Bunda Bali</h4>
+            <p>Jl. Kubu Abasan Gang 9 No 11</p>
+            <p>Denpasar, Bali</p>
+        </div>
+        <!-- Informasi Blog -->
+        <div class="footer-links">
+            <h4>Blog</h4>
+            <ul>
+                <li><a href="#">Teks Blog</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h4>Social Media</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 
 <!-- Include Bootstrap JS (Optional) -->
