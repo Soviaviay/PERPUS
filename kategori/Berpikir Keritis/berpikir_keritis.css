@@ -33,3 +33,24 @@
   .navbar.navbar-light .nav-link:focus {
       color: green;
   }
+
+
+
+
+
+  /* CSS untuk Berpikir Keritis Page */
+.image-container {
+    position: relative;
+    text-align: left;
+    width: fit-content;
+}
+
+.image-container img {
+    max-width: 70px; /* Atur lebar maksimum gambar */
+}
+
+.image-container h2 {
+    margin: 10px 0 0;
+    color: #333; 
+    font-size: 40px;
+}

@@ -4,10 +4,13 @@ fetch('navbar.html')
     .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
 
-        // Tandai tautan "Beranda" sebagai aktif
+        // Tandai tautan "Buku Saya" sebagai aktif
         document.querySelector('a[href="bukusaya.html"]').classList.add('active');
     });
 
+
+
+    
 // Ambil elemen-elemen ikon
 const iconBox = document.getElementById('icon-box');
 const iconBook = document.getElementById('icon-book');

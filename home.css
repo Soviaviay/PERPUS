@@ -467,10 +467,6 @@
     margin-bottom: 10px; /* Memberikan jarak antara teks dan bawah kotak */
 }
 
-/* Hover effect */
-.category-box:hover {
-    background-color: #f5f5f5;
-}
 
 .category-box img {
     width: 90px; /* Mengatur lebar gambar */
