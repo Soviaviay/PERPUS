@@ -1,0 +1,102 @@
+.controls {
+    display: flex; /* Menggunakan flexbox untuk mengatur posisi tombol */
+}
+
+.content {
+    position: relative; /* Membuat posisi relatif untuk menempatkan tombol-tombol */
+    text-align: center;
+}
+
+.left-control {
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+.right-control {
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+.controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Mengatur ukuran font tombol */
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+#bookImage {
+    max-width: 100%; 
+    max-height: 89vh; 
+    display: block; 
+    margin: 0 auto; /* Mengatur margin agar gambar berada di tengah */
+}
+
+.home-button,
+.back-button {
+    width: 40px; /* Mengatur lebar tombol */
+    height: 40px; /* Mengatur tinggi tombol */
+}
+
+.header {
+    background-color: #fff; /* Mengubah warna latar belakang header menjadi putih */
+    color: #333; /* Mengubah warna teks header */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Menambahkan garis bawah header */
+}
+
+
+.header h1 {
+    margin: 0;
+}
+
+.navigation {
+    display: flex; /* Menggunakan flexbox untuk mengatur posisi tombol */
+    align-items: center; /* Mengatur tombol dan teks secara vertikal di tengah */
+    justify-content: space-between; /* Menyebarkan tombol secara merata */
+}
+
+.navigation a {
+    margin: 0 10px; /* Mengatur margin tombol */
+}
+
+.navigation .home-button {
+    order: 1; /* Mengatur urutan tombol Home */
+}
+
+.navigation .back-button {
+    order: 3; /* Mengatur urutan tombol Back */
+}
+
+.navigation .home-button:hover,
+.navigation .back-button:hover {
+    opacity: 0.7; /* Mengubah opasitas tombol saat dihover */
+}

@@ -1,16 +1,33 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Ambil nilai parameter URL untuk mendapatkan URL buku
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlBuku = urlParams.get('url');
+document.addEventListener("DOMContentLoaded", function() {
+    // Mendapatkan referensi ke elemen container buku
+    const bookContainer = document.getElementById("book-container");
 
-    // Pastikan parameter URL buku ada sebelum mencoba menampilkan
-    if (urlBuku) {
-        // Gunakan URL buku untuk menampilkan buku dalam PDF Viewer
-        const pdfViewer = document.getElementById('pdfViewer');
-        pdfViewer.src = urlBuku;
+    // Path dari buku-buku
+    const bookPaths = [
+        "Buku/Belalai Tiwi.pdf",
+        "Buku/Aku Sayang Ibu.pdf",
+        "Buku/Bersama Sahabat.pdf",
+        // Tambahkan path buku lainnya di sini sesuai kebutuhan
+    ];
+
+    // Mendapatkan path buku dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookIndex = parseInt(urlParams.get('bookIndex'));
+
+    // Memastikan index buku valid
+    if (!isNaN(bookIndex) && bookIndex >= 0 && bookIndex < bookPaths.length) {
+        // Membuat elemen iframe untuk menampilkan buku PDF
+        const iframe = document.createElement("iframe");
+        iframe.src = bookPaths[bookIndex];
+        iframe.width = "100%";
+        iframe.height = "600px";
+        iframe.frameborder = "0";
+        iframe.scrolling = "auto";
+
+        // Menambahkan iframe ke container buku
+        bookContainer.appendChild(iframe);
     } else {
-        // Jika tidak ada parameter URL buku, berikan pesan kesalahan atau tindakan yang sesuai
-        console.error('Parameter URL buku tidak ditemukan.');
-        // Atau lakukan tindakan lainnya, seperti menampilkan pesan kesalahan kepada pengguna
+        // Menampilkan pesan kesalahan jika index buku tidak valid
+        bookContainer.innerHTML = "<p>Book not found.</p>";
     }
 });
