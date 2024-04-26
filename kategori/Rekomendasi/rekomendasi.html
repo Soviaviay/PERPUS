@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi</title>
+     <!-- Include Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- Include FontAwesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="rekomendasi.css">
+</head>
+<body>
+   <!-- Tambahkan elemen dengan id "navbar-container" di sini -->
+   <div id="navbar-container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container"> <!-- Tambahkan container untuk menyusun elemen di dalamnya -->
+            <a class="navbar-brand" href="#">
+                <img src="../../file/logo.png" alt="Your Logo" class="logo"> <!--MADRASAH KARAKTER MUTIARA BUNDA-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="../../home.html"><i id="home-icon" class="fas fa-home fa-lg"></i> Beranda</a>
+                    <a class="nav-link" href="../../bukusaya.html"><i id="book-icon" class="fas fa-book-open"></i> Buku Saya</a>
+                    <a class="nav-link" href="../../profil.html"><i id="profile-icon" class="fas fa-user"></i> Profil</a>
+                </ul>
+            </div>       
+        </div>  
+    </nav>
+    </div>
+    
+    <!-- Add this div for overlay effect -->
+    <div class="overlay"></div>
+
+    <!-- Content for Cerita Rakyat Page -->
+    <div class="container mt-3">
+        <!-- judul kategori -->
+        <h2>Rekomendasi untuk Pemula
+        </h2>
+    </div>
+
+    <!-- List buku ditampilkan di sini -->
+    <div class="book-list">
+        <!-- Buku 1 -->
+        <div class="book" 
+            data-info="Tiwi gajah yang mempunyai belalai panjang. Tiwi senang bisa membantu orang dengan belalainya."
+            data-author="Endri Kris Junprihatina"
+            data-halaman="16"
+            data-ilustrator="Hutami Dwijayanti"
+            data-kategori="Hewan"
+            data-url="https://api.bookbotkids.workers.dev/books/2fb5783e-7814-4e21-b422-e384408e64a7/Belalai%20Tiwi.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Belalai Tiwi/belalai_tiwi.html"
+            data-download="https://drive.google.com/file/d/1IvkuLhOooGKvYtN0Lui1gkGRVEZmsBdj/view?usp=sharing"
+            onclick="showBookPopup('file/buku/Belalai Tiwi.png', 'Belalai Tiwi', 'Endri Kris Junprihatina', 'Informasi tambahan mengenai buku 1.', '16', 'URL_Buku_1', 'ilustrator 1', 'Kategori 1', 'URL 1', 'lisensi 1')">
+            <div class="book-cover">
+                <img src="../../Buku/Belalai Tiwi/Belalai Tiwi_page-0001.jpg" alt="Buku 1">
+            </div>
+            <p class="book-title">Belalai Tiwi</p>
+        </div>
+
+        <!-- Buku 2 -->
+        <div class="book" 
+            data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
+            data-author="Fongsamay Phommaxay"
+            data-halaman="10"
+            data-ilustrator="Nivong Sengsakoun"
+            data-kategori="Kehidupan"
+            data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Aku Sayang Ibu/aku_sayang_ibu.html"
+            data-download="https://drive.google.com/file/d/1KKvPyN75eRvQYxgiHol_MqeE4i4d8h0w/view?usp=drive_link"
+            onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
+            <div class="book-cover">
+                <img src="../../Buku/Aku Sayang Ibu/Aku Sayang Ibu_page-0001.jpg" alt="Buku 2">
+            </div>
+            <p class="book-title">Aku Sayang Ibu</p>
+        </div>
+
+        <!-- Buku 3 -->
+        <div class="book" 
+            data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
+            data-author="Nimmy Chacko" 
+            data-halaman="12"
+            data-ilustrator="Lavania Naidu"
+            data-kategori="Kehidupan"
+            data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Bersama Sahabat/bersama_sahabat.html"
+            data-download="https://drive.google.com/file/d/1lnIktfaKlmr177y--FHnN81waQMNBWnF/view?usp=drive_link"
+            onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
+            <div class="book-cover">
+                <img src="../../Buku/Bersama Sahabat/Bersama Sahabat_page-0001.jpg" alt="Buku 3">
+            </div>
+            <p class="book-title">Bersama Sahabat</p>
+        </div>
+
+        <!-- Buku 4 -->
+        <div class="book" 
+            data-info="Zara adalah seorang peneliti mikroba. Ia mencari mikroba baru dan menguji bagaimana mereka bereaksi terhadap berbagai media." 
+            data-author="Bel Richardson" 
+            data-halaman="12"
+            data-ilustrator="Jemma Jose"
+            data-kategori="Sains"
+            data-url="https://api.bookbotkids.workers.dev/books/27943cbb-61c1-484c-9ddb-7106d4db1885/Mikroorganisme.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Mikroorganisme/Mikroorganisme.html"
+            data-download="https://drive.google.com/file/d/1B58gKzALImPoyIJO9tPCN2qRuu7e5D36/view?usp=drive_link"
+            onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Penulis Buku 4', 'Informasi tambahan mengenai buku 4.', '50', 'URL_Buku_4', 'ilustrator 4', 'Kategori 4', 'URL 4', 'lisensi 4')">
+            <div class="book-cover">
+                <img src="../../Buku/Mikroorganisme/Mikroorganisme_page-0001.jpg" alt="Buku 4">
+            </div>
+            <p class="book-title">Mikroorganisme</p>
+        </div>
+
+        <div class="book" 
+            data-info="Abdul membuat apam gosong dan apam cantik untuk dibagikan di festival Rajab. Apam gosong untuk dimakan sendiri. Kalau kamu jadi Abdul, kamu akan makan apam yang mana?" 
+            data-author="Kiki Putri" 
+            data-halaman="15"
+            data-ilustrator="Divina Ariadini"
+            data-kategori="Kehidupan"
+            data-url="https://api.bookbotkids.workers.dev/books/f6f6a787-59c0-494f-a2ca-25f8de79955e/Membuat%20Apam.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Membuat Apam/Membuat Apam.html"
+            data-download="https://drive.google.com/file/d/13SA88uJBfSjq2lEsAKyUAqe26nL7Gkq9/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Membuat Apam/Membuat Apam_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Membuat Apam</p>
+        </div>
+
+        <!-- Buku 5 -->
+        <div class="book" 
+            data-info="Talas mencari tempat untuk tidur dan akhirnya menemukan pohon yang bagus." 
+            data-author="Paul Kennedy" 
+            data-halaman="12"
+            data-ilustrator="Graham Paterson"
+            data-kategori="Kehidupan"
+            data-url="https://api.bookbotkids.workers.dev/books/ef5f6eff-d823-494e-97d6-96e4bdebf8f2/Tempat%20Bermimpi%20Indah.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Tempat Bermimpi Indah/tempat_bermimpi_indah.html"
+            data-download="https://drive.google.com/file/d/1HlpHaNL9uEtiTfb3JzqsnPXsy3ROFFV1/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Tempat Bermimpi Indah/Tempat Bermimpi Indah_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Tempat Bermimpi Indah</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Poki mencari rumah, dan akhirnya menemukan satu yang cocok. Tapi teman-temannya juga ikut datang." 
+            data-author="Anisa Nada Sukmono" 
+            data-halaman="15"
+            data-ilustrator="Anisa Nada Sukmono"
+            data-kategori="Hewan"
+            data-url="https://api.bookbotkids.workers.dev/books/7161924a-50a0-4157-aebb-2158c08abcee/Poki%20Mencari%20Rumah.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Poki Mencari Rumah/poki_mencari_rumah.html"
+            data-download="https://drive.google.com/file/d/1on-i-SIszj0FZzkEGPybRyur7y9rkEei/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Poki Mencari Rumah/Poki Mencari Rumah_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Poki Mencari Rumah</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Celengan dari Ayah membantuku membeli seragam untuk teman baruku. Celengan ini telah mengajarkanku bagaimana pentingnya menabung." 
+            data-author="Khrisna Sarbah" 
+            data-halaman="18"
+            data-ilustrator="Umesh Chaudhary"
+            data-kategori="Kehidupan"
+            data-url="https://api.bookbotkids.workers.dev/books/d039e320-accc-4d38-85f8-756f7348563d/Celengan.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Celengan/celengan.html"
+            data-download="https://drive.google.com/file/d/1NencsriWtljwWUZKa2wv3i17KNuRg2gr/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Celengan/Celengan_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Celengan</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Yaki dan kawan-kawan menemukan rerimbunan rambutan, namun ternyata itu adalah jebakan yang dipasang oleh pemilik rerimbunan tersebut. Yaki berhasil melarikan diri dan menemukan rerimbunan rambutan lain untuk dimakan." 
+            data-author="Laksmi Manohara" 
+            data-halaman="18"
+            data-ilustrator="Sari Dewi"
+            data-kategori="Hewan"
+            data-url="https://api.bookbotkids.workers.dev/books/051e64ca-fd6e-4637-ae72-697790e40b33/Buah%20untuk%20Yaki.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Buah untuk Yaki/buah_untuk_yaki.html"
+            data-download="https://drive.google.com/file/d/1d1BQggl3cfgUstSVpsJyP0STK5uWWWgY/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku\Buah untuk Yaki\Buah untuk Yaki_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Buah untuk Yaki</p>
+        </div> 
+          
+        <div class="book" 
+            data-info="Tito dan Rika jalan-jalan dengan sosok hijau dan berbagai makhluk di planet dan angkasa, dan akhirnya pulang ke bumi." 
+            data-author="Kim Ann Arun" 
+            data-halaman="16"
+            data-ilustrator="Seat Sopheap"
+            data-kategori="Petualangan"
+            data-url="https://api.bookbotkids.workers.dev/books/b6d993b1-5491-4d9c-a58b-de4c02b023f2/Petualangan%20Menakjubkan.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="Buku/Petualangan Menakjubkan/petualangan_menakjubkan.html"
+            data-download="https://drive.google.com/file/d/1GQ96G4Yt20_0uy1QpwRFVkWZqqzhI3Ye/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Petualangan Menakjubkan/Petualangan Menakjubkan_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Petualangan Menakjubkan</p>
+        </div>   
+    </div>
+
+
+<!-- Pop-up Box -->
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <button class="close-popup" id="closePopupButton" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <div class="popup-content">
+            <!-- Informasi buku -->
+            <img src="" alt="Buku" id="popupBookImage" class="popup-img">
+            <h3 id="popupBookTitle">Judul Buku</h3>
+            <p class="popupBookAuthor" id="popupBookAuthor">Penulis: </p>
+            <!-- Tombol Baca dan Download -->
+            <a class="read-button" id="popupBookPage" target="_blank">
+                <i class="fas far fas fa-book-open"></i>Baca
+            </a>            
+            <a class="download-button" id="popupBookDownload" target="_blank">
+                <img src="../../file/Download.png" alt="Download" />
+            </a>
+            <!-- Sinopsis buku -->
+            <p class="popupBookInfo" id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+            <!-- Informasi halaman -->
+            <div class="info-box" id="combinedBox">
+                <span class="info-label" id="popupHalamanLabel">Halaman</span>
+                <span class="info-angka" id="popupBookHalaman">Angka</span>
+            </div>            
+            
+            <div class="info-box" id="ilustratorBox">
+                <span class="info-label">Ilustrator</span>
+                <span class="info-text" id="popupIlustrator">Nama Ilustrator</span>
+            </div>
+            <div class="info-box" id="kategoriBox">
+                <span class="info-label">Kategori</span>
+                <span class="info-text" id="popupKategori">Nama Kategori</span>
+            </div>
+            <div class="info-box" id="originalURLBox">
+                <span class="info-label">Original URL</span>
+                <a href="#" class="info-link" id="popupOriginalURL" target="_blank">Link Original</a>
+            </div>
+            <div class="info-box" id="lisensiBox">
+                <span class="info-label">Lisensi</span>
+                <span class="info-text" id="popupLisensi">Jenis Lisensi</span>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+    <!-- Include JavaScript file terpisah -->
+    <script src="rekomendasi.js"></script>
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

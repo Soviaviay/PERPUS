@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buah untuk Yaki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="buah_untuk_yaki.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+            <a href="../../../home.html"><img src="../home.png" alt="Home" title="Home" class="home-button"></a>
+            <h1>Buah untuk Yaki</h1>
+            <a href="#" onclick="goToCover()" class="back-button"><img src="../back.png" alt="Back" title="Back"></a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <img src="Buah untuk Yaki_page-0001.jpg" alt="Cover" id="bookImage">
+        <button class="left-control" onclick="prevPage()"><i class="fas fa-chevron-left"></i></button>
+        <button class="right-control" onclick="nextPage()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    
+
+
+    
+    <script>
+        var currentPage = 1;
+        var totalPages = 19; // Jumlah halaman buku
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                if (currentPage === 1) {
+                    // Saat kita di halaman sampul, arahkan ke halaman pertama bukan ke halaman kedua
+                    document.getElementById('bookImage').src = 'Buah untuk Yaki_page-001.jpg';
+                    document.querySelector('.left-control').classList.remove('disabled');
+                } else {
+                    document.getElementById('bookImage').src = 'Buah untuk Yaki_page-00' + ('0' + currentPage).slice(-2) + '.jpg';
+                }
+            }
+            if (currentPage === totalPages) {
+                document.querySelector('.right-control').classList.add('disabled');
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) { // Periksa jika currentPage lebih besar dari 1
+                currentPage--;
+                document.getElementById('bookImage').src = 'Buah untuk Yaki_page-00' + ('0' + currentPage).slice(-2) + '.jpg';
+            } else if (currentPage === 1) {
+                currentPage = 0;
+                document.getElementById('bookImage').src = 'Buah untuk Yaki_page-001.jpg';
+            }
+        }
+
+        function goBack() {
+            history.back(); // Kembali ke halaman sebelumnya
+        }
+
+        function goToCover() {
+            currentPage = 1; // Set currentPage kembali ke 1 (halaman cover)
+            document.getElementById('bookImage').src = 'Buah untuk Yaki_page-0001.jpg'; // Update gambar ke halaman cover
+            document.querySelector('.right-control').classList.remove('disabled'); // Hapus kelas disabled dari tombol kanan
+        }
+
+        
+    </script>
+</body>
+</html>
