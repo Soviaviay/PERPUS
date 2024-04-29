@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dongeng</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="dongeng.css">
+</head>
+<body>
+   <!-- Tambahkan elemen dengan id "navbar-container" di sini -->
+   <div id="navbar-container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container"> <!-- Tambahkan container untuk menyusun elemen di dalamnya -->
+            <a class="navbar-brand" href="#">
+                <img src="../../file/logo.png" alt="Your Logo" class="logo"> <!--MADRASAH KARAKTER MUTIARA BUNDA-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="../../home.html"><i id="home-icon" class="fas fa-home fa-lg"></i> Beranda</a>
+                    <a class="nav-link" href="../../bukusaya.html"><i id="book-icon" class="fas fa-book-open"></i> Buku Saya</a>
+                    <a class="nav-link" href="../../profil.html"><i id="profile-icon" class="fas fa-user"></i> Profil</a>
+                </ul>
+            </div>       
+        </div>  
+    </nav>
+    </div>
+    
+    <!-- Add this div for overlay effect -->
+    <div class="overlay"></div>
+
+    <!-- Content for Dongengt Page -->
+    <div class="container mt-3">
+        <!-- Gambar dan judul kategori -->
+        <div class="image-container">
+            <img src="cerita rakyat.png" alt="cerita_rakyat" class="img-fluid">
+            <h2>Dongeng</h2>
+        </div>
+        <!-- Include your content related to Dongeng here -->
+    </div>
+
+    <!-- List buku ditampilkan di sini -->
+    <div class="book-list">
+        <!-- Buku 1 -->
+    <div class="book" 
+        data-info="Aka adalah penyanyi yang pergi ke desa dan bernyanyi di pesta. Suatu hari, dia pergi ke desa baru dan mulai menyanyikan lagunya. Dia mendengar suara dan bertemu Dino si dinosaurus. Mereka menjadi teman dan bernyanyi bersama. Awan mendengar lagu mereka dan mulai hujan." 
+        data-author="KManisha Chaudhry" 
+        data-halaman="7"
+        data-ilustrator="Rajiv Eipe"
+        data-kategori="Dongeng"
+        data-url="https://api.bookbotkids.workers.dev/books/ba0fa77d-2c97-418f-9af1-d7b0e64cf8f2/Nyanyian%20Hujan.pdf"
+        data-lisensi="CC BY-NC 4.0."
+        data-page="../../kategori\Dongeng\Nyanyian Hujan\nyanyian_hujan.html"
+        data-download="https://drive.google.com/file/d/1Eh5NSNz2RIWdxXMtUSUWBX-DuffrO6mF/view?usp=drive_link"
+        onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Penulis Buku 4', 'Informasi tambahan mengenai buku 4.', '50', 'URL_Buku_4', 'ilustrator 4', 'Kategori 4', 'URL 4', 'lisensi 4')">
+        <div class="book-cover">
+            <img src="../../kategori/Dongeng/Nyanyian Hujan/Nyanyian Hujan_page-0001.jpg" alt="Buku 4">
+        </div>
+        <p class="book-title">Nyanyian Hujan</p>
+    </div>
+
+        <!-- Buku 2 -->
+    <div class="book" 
+        data-info="Guru baru datang ke kota untuk membantu orang-orang menceritakan cerita mereka dan kota tersebut menjadi terkenal dengan berbagai macam cerita ."
+        data-author="Rukmini Banerji"
+        data-halaman="13"
+        data-ilustrator="Bindia Thapar"
+        data-kategori="Dongeng"
+        data-url="https://api.bookbotkids.workers.dev/books/69d137b5-8595-4715-b412-697af23a809e/Kota%20Aneka%20Kisah.pdf"
+        data-lisensi="CC BY-NC 4.0."
+        data-page="../../kategori\Dongeng\Kota Aneka Kisah\kota_aneka_kisah.html"
+        data-download="https://drive.google.com/file/d/1gcpRSRk6qtA-wVlZTmzWguQxz8Py1LJA/view?usp=drive_link"
+        onclick="showBookPopup('file/buku/Belalai Tiwi.png', 'Belalai Tiwi', 'Endri Kris Junprihatina', 'Informasi tambahan mengenai buku 1.', '16', 'URL_Buku_1', 'ilustrator 1', 'Kategori 1', 'URL 1', 'lisensi 1')">
+        <div class="book-cover">
+            <img src="../../kategori/Dongeng/Kota Aneka Kisah/Kota Aneka Kisah_page-0001.jpg" alt="Buku 1">
+        </div>
+        <p class="book-title">Kota Aneka Kisah</p>
+    </div>
+
+
+        <!-- Buku 3 -->
+    <div class="book" 
+        data-info="Seorang ibu miskin berdoa ingin punya anak, walaupun anaknya buruk rupa. Tuhan mengabulkan doanya, dan lahirlah seorang anak laki-laki mirip katak." 
+        data-author="Rakyat Bangka Belitung" 
+        data-halaman="12"
+        data-ilustrator="Rakyat Bangka Belitung"
+        data-kategori="Dongeng"
+        data-url="https://api.bookbotkids.workers.dev/books/b8030640-54af-4461-ac9b-837e64a25c0b/Sang%20Bujang%20Katak.pdf"
+        data-lisensi="CC BY-NC 4.0."
+        data-page="../../kategori\Dongeng\Sang Bujang Katak\bujang_katak.html"
+        data-download="https://drive.google.com/file/d/151_t76f07V6oraw2XdUvQ0QFmCaUZ9if/view?usp=drive_link"
+        onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+        <div class="book-cover">
+            <img src="../../kategori/Dongeng/Sang Bujang Katak/Sang Bujang Katak_page-0001.jpg" alt="Buku 5">
+        </div>
+        <p class="book-title">Sang Bujang Katak</p>
+    </div>  
+
+        <!-- Buku 4 -->
+        <div class="book" 
+            data-info="Berbagai cerita naga klasik Eropa. Naga dikenal sebagai binatang buas dan buas. Mereka biasanya terbang di atas kota dan menghirup api, membakar kota hingga rata dengan tanah. Dibutuhkan prajurit pemberani untuk mengalahkan naga. Pada zaman dahulu, naga sering mengunjungi rumah orang." 
+            data-author="Bel Richardson" 
+            data-halaman="9"
+            data-ilustrator="Marielena Alevizaki"
+            data-kategori="Dongeng"
+            data-url="https://api.bookbotkids.workers.dev/books/b8d2782a-f19f-4594-bea5-a3c69589fcdc/Kisah%20Klasik%20Naga%20Eropa.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Kisah Klasik Naga Eropa\naga_eropa.html"
+            data-download="https://drive.google.com/file/d/1fvGTspEaJfqRql8pM_mFqm70P-Q5dIyv/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Kisah Klasik Naga Eropa/Kisah Klasik Naga Eropa_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Kisah Klasik Naga Eropa</p>
+        </div>   
+
+    <div class="book" 
+        data-info="Pangeran berhasil menemukan bola bayur yang lebih besar dengan bantuan harimau yang memberinya petunjuk jalan."
+        data-author="Wulan Mulya Pratiwi" 
+        data-halaman="12"
+        data-ilustrator="Evi Shelvia"
+        data-kategori="Dongeng"
+        data-url="https://api.bookbotkids.workers.dev/books/7f98f922-5122-44cb-aa90-56cd03eef7f7/Pangeran%20dan%20Inyiak%20si%20Harimau.pdf"
+        data-lisensi="CC BY-NC 4.0."
+        data-page="../../kategori\Dongeng\Pangeran dan Inyiak si Harimau\pangeran_inyak.html"
+        data-download="https://drive.google.com/file/d/1mTBxFAAuvgPhdM4JvTnMAVRHD-0vaUiv/view?usp=drive_link"
+        onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+        <div class="book-cover">
+            <img src="../../kategori/Dongeng/Pangeran dan Inyiak si Harimau/Pangeran dan Inyiak si Harimau_page-0001.jpg" alt="Buku 5">
+        </div>
+        <p class="book-title">Pangeran dan Inyiak si Harimau</p>
+    </div>  
+
+        <!-- Buku 5 -->
+        <div class="book" 
+            data-info="Timun Mas sekarang telah dewasa dan akan bertemu dengan Raksasa. Raksasa akan mengejarnya, tetapi Timun Mas akan berhasil kabur." 
+            data-author="Eva Rodja" 
+            data-halaman="13"
+            data-ilustrator="Eva Rodja"
+            data-kategori="Dongeng"
+            data-url="https://api.bookbotkids.workers.dev/books/f607c0b9-0591-40cb-b7c6-0de3d5de73e1/Mengejar%20Timun%20Mas.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Mengejar Timun Mas\timun_mas.html"
+            data-download="https://drive.google.com/file/d/1aYq-8deAg6X3cPMcTcwP-jpDpD37Pzc3/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Mengejar Timun Mas/Mengejar Timun Mas_page-0002.jpg" alt="Buku 6">
+            </div>
+            <p class="book-title">Mengejar Timun Mas</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Bintang sedih karena tidak punya teman di negerinya. Eva menjadi teman bintang dan menyembuhkan adik Eva dengan sinar bintang." 
+            data-author="Ina Inong" 
+            data-halaman="10"
+            data-ilustrator="Masagung Darojatun."
+            data-kategori="Dongeng"
+            data-url="https://api.bookbotkids.workers.dev/books/0f47e32b-61c1-4f1b-b4b3-01524ae66484/Bintang%20Kedelapan.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Bintang Kedelapan\bintang_kedelapan.html"
+            data-download="https://drive.google.com/file/d/1SZIj-gPbmIltwUnukf75bLBz0L5t_J6J/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Bintang Kedelapan/Bintang Kedelapan_page-0001.jpg" alt="Buku 7">
+            </div>
+            <p class="book-title">Bintang Kedelapan</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Nilam pandai mengobati hewan. Suatu hari persediaannya habis. Nilam harus ke hutan mencari nya." 
+            data-author="Rizky Ramda" 
+            data-halaman="17"
+            data-ilustrator="Ella Elviana"
+            data-kategori="Dongeng"
+            data-url="https://api.bookbotkids.workers.dev/books/76f239b2-38b7-455a-bd5c-26e3e6eeece3/Nilam%20Si%20Tabib.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Nilam Si Tabib\tabib_nilam.html"
+            data-download="https://drive.google.com/file/d/1Bg57Vxds627ZsN0lkT_LZpqFh4W4XUAV/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Nilam Si Tabib/Nilam Si Tabib_page-0001.jpg" alt="Buku 8">
+            </div>
+            <p class="book-title">Nilam Si Tabib</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Kakek Berima adalah seorang pria tua yang bahagia yang suka bernyanyi dan bepergian. Dia memiliki teman-teman dari berbagai hewan, dan dia selalu mengajarkan kepada anak-anak untuk menghormati orang tua mereka."
+            data-author="Nazia Jabeen" 
+            data-halaman="13"
+            data-ilustrator="Manobendro Golder"
+            data-kategori="Dongeng"
+            data-url="https://www.letsreadasia.org/read/d38fb7fe-1a57-42e0-9763-1a0f35eed2d0?bookLang=6260074016145408"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Kakek Berima\kakek_berima.html"
+            data-download="https://drive.google.com/file/d/1YQfVf9I-_BRroFh3afTiys0-qXGGviqM/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Kakek Berima/Kakek Berima_page-0001.jpg" alt="Buku 9">
+            </div>
+            <p class="book-title">Kakek Berima</p>
+        </div>   
+
+        <div class="book" 
+            data-info="Monster gelap ada di dalam diri kakak dan menyebabkan kakak berubah. Aku dan keluarga sedang berusaha membantu kakak untuk kembali seperti semula." 
+            data-author="BEL RICHARDSON" 
+            data-halaman="12"
+            data-ilustrator="SUNAINA COELHO"
+            data-kategori="Dongeng"
+            data-url="https://api.bookbotkids.workers.dev/books/7ae35bff-9373-44cc-82ac-9f6abe1a0752/Monster%20Kakak%20.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../kategori\Dongeng\Monster Kakak\monster_kakak.html"
+            data-download="https://drive.google.com/file/d/1rmmlt_vHBQt_hwt1tyUET26AVQ1hQoCy/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../kategori/Dongeng/Monster Kakak/Monster Kakak _page-0001.jpg" alt="Buku 10">
+            </div>
+            <p class="book-title">Monster Kakak</p>
+        </div>   
+    </div>
+
+<!-- Pop-up Box -->
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <button class="close-popup" id="closePopupButton" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <div class="popup-content">
+            <!-- Informasi buku -->
+            <img src="" alt="Buku" id="popupBookImage" class="popup-img">
+            <h3 id="popupBookTitle">Judul Buku</h3>
+            <p class="popupBookAuthor" id="popupBookAuthor">Penulis: </p>
+            <!-- Tombol Baca dan Download -->
+            <a class="read-button" id="popupBookPage" target="_blank">
+                <i class="fas far fas fa-book-open"></i>Baca
+            </a>            
+            <a class="download-button" id="popupBookDownload" target="_blank">
+                <img src="../../file/Download.png" alt="Download" />
+            </a>
+            <!-- Sinopsis buku -->
+            <p class="popupBookInfo" id="popupBookInfo">Informasi tambahan mengenai buku akan ditampilkan di sini.</p>
+            <!-- Informasi halaman -->
+            <div class="info-box" id="combinedBox">
+                <span class="info-label" id="popupHalamanLabel">Halaman</span>
+                <span class="info-angka" id="popupBookHalaman">Angka</span>
+            </div>            
+            
+            <div class="info-box" id="ilustratorBox">
+                <span class="info-label">Ilustrator</span>
+                <span class="info-text" id="popupIlustrator">Nama Ilustrator</span>
+            </div>
+            <div class="info-box" id="kategoriBox">
+                <span class="info-label">Kategori</span>
+                <span class="info-text" id="popupKategori">Nama Kategori</span>
+            </div>
+            <div class="info-box" id="originalURLBox">
+                <span class="info-label">Original URL</span>
+                <a href="#" class="info-link" id="popupOriginalURL" target="_blank">Link Original</a>
+            </div>
+            <div class="info-box" id="lisensiBox">
+                <span class="info-label">Lisensi</span>
+                <span class="info-text" id="popupLisensi">Jenis Lisensi</span>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+    <!-- Include JavaScript file terpisah -->
+    <script src="dongeng.js"></script>
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
