@@ -1,6 +1,7 @@
 /* CSS untuk slider gambar */
 .slider-container {
     width: 100%;
+    margin-bottom: 200px;
     height: 400px; /* Sesuaikan tinggi banner sesuai kebutuhan Anda */
     position: relative;
     overflow: hidden;
@@ -50,69 +51,6 @@
     .slider-container {
         height: 300px; /* Sesuaikan tinggi banner sesuai kebutuhan Anda untuk layar yang lebih kecil */
     }
-}
-
-/* CSS untuk kotak pencarian dan filter */
-.search-filter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 75px;
-}
-
-.search-input-container {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    border: 1px solid #fff; /* Warna outline pencarian (putih) */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Shadow pada outline pencarian */
-    margin-right: 5px; /* Jarak antara kotak pencarian dan tombol filter */
-}
-
-.search-input-container i {
-    color: #007bff; /* Warna ikon pencarian (biru) */
-    padding-right: 0;
-    padding-left: 15px;
-    margin-right: 5px; /* Jarak antara ikon pencarian dan teks pencarian */
-    background-color: #fff; /* Background ikon pencarian (putih) */
-}
-
-.search-filter-container input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.search-filter-container button {
-    padding: 10px;
-    width: 46px;
-    height: 46px;
-    background-color: #007bff; /* Warna latar belakang kotak filter (biru) */
-    color: #fff; /* Warna ikon filter (putih) */
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; /* Efek transisi untuk hover */
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-/* Ikon kaca pembesar dan filter di dalam tombol */
-.search-filter-container button i {
-    font-size: 20px;
-}
-
-/* Ganti warna latar belakang kotak filter saat dihover */
-.search-filter-container button:hover {
-    background-color: #0056b3; /* Sesuaikan dengan warna yang diinginkan saat tombol dihover */
 }
 
 /* CSS untuk daftar buku */
@@ -542,8 +480,9 @@
 
 /* CSS untuk Footer */
 footer {
-    background-color: #f0f0f0;
+    background-color: #493975;
     padding: 20px 0;
+    color: white;
 }
 
 .footer-container {
@@ -569,11 +508,11 @@ footer {
 
 .footer-links a,
 .social-media a {
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
 .footer-links a:hover,
 .social-media a:hover {
-    color: #555;
+    color: #202b8f;
 }

@@ -8,11 +8,11 @@
 }
 
 .navbar-nav {
-    margin: 0 auto; /* Untuk menengahkan Navbar */
+    margin-right: 0 auto; /* Untuk menengahkan Navbar */
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: green; /* Warna teks untuk tautan navbar aktif */
+    color:  #493975; /* Warna teks untuk tautan navbar aktif */
 }
 
   
@@ -22,7 +22,7 @@
   .navbar.navbar-light .navbar-brand.show,
   .navbar.navbar-light .navbar-brand:hover,
   .navbar.navbar-light .navbar-brand:focus {
-      color: green;
+      color:  #493975;
   }
 
   /* Atur warna teks menjadi hijau ketika tautan dalam navbar aktif */
@@ -31,5 +31,5 @@
   .navbar.navbar-light .nav-link.show,
   .navbar.navbar-light .nav-link:hover,
   .navbar.navbar-light .nav-link:focus {
-      color: green;
+      color:  #493975;
   }
