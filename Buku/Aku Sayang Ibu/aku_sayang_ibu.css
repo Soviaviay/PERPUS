@@ -64,8 +64,12 @@
     margin: 0 auto; /* Mengatur margin agar gambar berada di tengah */
 }
 
-.home-button,
-.back-button {
+.home-button{
+    width: 40px; /* Mengatur lebar tombol */
+    height: 40px; /* Mengatur tinggi tombol */
+}
+
+.back-button img{
     width: 40px; /* Mengatur lebar tombol */
     height: 40px; /* Mengatur tinggi tombol */
 }

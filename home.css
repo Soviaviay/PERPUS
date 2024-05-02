@@ -125,8 +125,223 @@
     -webkit-border-radius: 8px;
 }
 
+/* CSS untuk daftar buku alam sekitar */
+.environment-books {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 55px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; /* Tambahkan overflow-y untuk scroll vertikal */
+}
 
-/* Style untuk Pop-up Box */
+.environment-books h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Memastikan elemen sejajar secara vertikal */
+}
+
+.environment-books h2 p {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: auto; /* Membuat teks "Lihat Semua" berdempetan di sisi kanan */
+}
+
+/* Tambahkan margin pada tombol prev dan next */
+.prev-book-env,
+.next-book-env {
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 7px;
+    padding: 8px 12px;
+}
+
+.book-slider-env {
+    display: flex;
+    flex-wrap: wrap; /* Tambahkan flex-wrap untuk buku mendistribusikan secara vertikal */
+    overflow-x: auto; /* Tambahkan overflow-x agar dapat melakukan scroll horizontal */
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.book-list-env {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-env {
+    width: 225px; /* Sesuaikan lebar buku */
+    text-align: center;
+    border: 0px solid #ddd;
+    overflow: hidden;
+    cursor: pointer; /* Tambahkan cursor pointer pada sampul buku */
+}
+
+.book-env img {
+    width: 225px;
+    border-radius: 8px;
+    height: 295px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+    /*Efekbayangandisisibawah*/object-fit: cover;
+    /*Menyesuaikangambardenganlebardantinggibuku*/-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+/* CSS untuk daftar buku yang menghibur */
+.funny-books {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 55px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; /* Tambahkan overflow-y untuk scroll vertikal */
+}
+
+.funny-books h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Memastikan elemen sejajar secara vertikal */
+}
+
+.funny-books h2 p {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: auto; /* Membuat teks "Lihat Semua" berdempetan di sisi kanan */
+}
+
+/* Tambahkan margin pada tombol prev dan next */
+.prev-book-funny,
+.next-book-funny {
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 7px;
+    padding: 8px 12px;
+}
+
+.book-slider-funny {
+    display: flex;
+    flex-wrap: wrap; /* Tambahkan flex-wrap untuk buku mendistribusikan secara vertikal */
+    overflow-x: auto; /* Tambahkan overflow-x agar dapat melakukan scroll horizontal */
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.book-list-funny {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-funny {
+    width: 225px; /* Sesuaikan lebar buku */
+    text-align: center;
+    border: 0px solid #ddd;
+    overflow: hidden;
+    cursor: pointer; /* Tambahkan cursor pointer pada sampul buku */
+}
+
+.book-funny img {
+    width: 225px;
+    border-radius: 8px;
+    height: 295px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+    /*Efekbayangandisisibawah*/object-fit: cover;
+    /*Menyesuaikangambardenganlebardantinggibuku*/-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+
+/* CSS untuk daftar buku tentang keluarga dan persahabatan */
+.family-friend-books {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 55px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; /* Tambahkan overflow-y untuk scroll vertikal */
+}
+
+.family-friend-books h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Memastikan elemen sejajar secara vertikal */
+}
+
+.family-friend-books h2 p {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: auto; /* Membuat teks "Lihat Semua" berdempetan di sisi kanan */
+}
+
+/* Tambahkan margin pada tombol prev dan next */
+.prev-book-ff,
+.next-book-ff {
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 7px;
+    padding: 8px 12px;
+}
+
+.book-slider-ff {
+    display: flex;
+    flex-wrap: wrap; /* Tambahkan flex-wrap untuk buku mendistribusikan secara vertikal */
+    overflow-x: auto; /* Tambahkan overflow-x agar dapat melakukan scroll horizontal */
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.book-list-ff {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-ff {
+    width: 225px; /* Sesuaikan lebar buku */
+    text-align: center;
+    border: 0px solid #ddd;
+    overflow: hidden;
+    cursor: pointer; /* Tambahkan cursor pointer pada sampul buku */
+}
+
+.book-ff img {
+    width: 225px;
+    border-radius: 8px;
+    height: 295px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+    /*Efekbayangandisisibawah*/object-fit: cover;
+    /*Menyesuaikangambardenganlebardantinggibuku*/-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+
+
+/* ------------------------Style untuk Pop-up Box ---------------------------*/
 .popup-container {
     display: none;
     position: fixed;

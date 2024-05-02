@@ -7,10 +7,6 @@
     max-height: 50px; /* Ubah ukuran logo sesuai kebutuhan */
 }
 
-.navbar-nav {
-    margin: 0 auto; /* Untuk menengahkan Navbar */
-}
-
 .navbar-nav .nav-item .nav-link.active {
     color: green; /* Warna teks untuk tautan navbar aktif */
 }

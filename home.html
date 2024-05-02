@@ -31,10 +31,10 @@
     <h2>
         Rekomendasi untuk Pemula
         <p><a href="kategori/Rekomendasi/rekomendasi.html">Lihat Semua</a></p>
-        <button class="prev-book"><i class="fas fa-chevron-left"></i></button>
-        <button class="next-book"><i class="fas fa-chevron-right"></i></button>
+        <button class="prev-book" id="prev-book-1"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-book" id="next-book-1"><i class="fas fa-chevron-right"></i></button>
     </h2>
-    <div class="book-slider">
+    <div class="book-slider" id="book-slider-1">
         <div class="book-list">
             <!-- List buku ditampilkan di sini -->
             <div class="book-list">
@@ -53,40 +53,6 @@
                         <img src="Buku/Belalai Tiwi/Belalai Tiwi_page-0001.jpg" alt="Buku 1">
                     </div>
                     <p class="book-title">Belalai Tiwi</p>
-                </div>
-
-                <!-- Buku 2 -->
-                <div class="book" 
-                    data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
-                    data-author="Fongsamay Phommaxay"
-                    data-halaman="10"
-                    data-ilustrator="Nivong Sengsakoun"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Aku Sayang Ibu/aku_sayang_ibu.html"
-                    onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
-                    <div class="book-cover">
-                        <img src="Buku/Aku Sayang Ibu/Aku Sayang Ibu_page-0001.jpg" alt="Buku 2">
-                    </div>
-                    <p class="book-title">Aku Sayang Ibu</p>
-                </div>
-
-                <!-- Buku 3 -->
-                <div class="book" 
-                    data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
-                    data-author="Nimmy Chacko" 
-                    data-halaman="12"
-                    data-ilustrator="Lavania Naidu"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Bersama Sahabat/bersama_sahabat.html"
-                    onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
-                    <div class="book-cover">
-                        <img src="Buku/Bersama Sahabat/Bersama Sahabat_page-0001.jpg" alt="Buku 3">
-                    </div>
-                    <p class="book-title">Bersama Sahabat</p>
                 </div>
 
                 <!-- Buku 4 -->
@@ -186,6 +152,42 @@
                     </div>
                     <p class="book-title">Buah untuk Yaki</p>
                 </div>   
+
+                <!-- Buku 2 -->
+                <div class="book" 
+                    data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
+                    data-author="Fongsamay Phommaxay"
+                    data-halaman="10"
+                    data-ilustrator="Nivong Sengsakoun"
+                    data-kategori="Kehidupan"
+                    data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
+                    data-lisensi="CC BY-NC 4.0."
+                    data-page="Buku/Aku Sayang Ibu/aku_sayang_ibu.html"
+                    onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
+                    <div class="book-cover">
+                        <img src="Buku/Aku Sayang Ibu/Aku Sayang Ibu_page-0001.jpg" alt="Buku 2">
+                    </div>
+                    <p class="book-title">Aku Sayang Ibu</p>
+                </div>
+
+                <!-- Buku 3 -->
+                <div class="book" 
+                    data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
+                    data-author="Nimmy Chacko" 
+                    data-halaman="12"
+                    data-ilustrator="Lavania Naidu"
+                    data-kategori="Kehidupan"
+                    data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
+                    data-lisensi="CC BY-NC 4.0."
+                    data-page="Buku/Bersama Sahabat/bersama_sahabat.html"
+                    onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
+                    <div class="book-cover">
+                        <img src="Buku/Bersama Sahabat/Bersama Sahabat_page-0001.jpg" alt="Buku 3">
+                    </div>
+                    <p class="book-title">Bersama Sahabat</p>
+                </div>
+
+
                 <div class="book" 
                     data-info="Tito dan Rika jalan-jalan dengan sosok hijau dan berbagai makhluk di planet dan angkasa, dan akhirnya pulang ke bumi." 
                     data-author="Kim Ann Arun" 
@@ -206,185 +208,474 @@
     </div>
 </div>
 
-<!-- Daftar Rekomendasi Buku -->
-<div class="recommendations">
+<!-- Daftar Buku Alam Sekitar -->
+<div class="environment-books">
     <h2>
-        Rekomendasi untuk Pemula
-        <p><a href="kategori/Rekomendasi/rekomendasi.html">Lihat Semua</a></p>
-        <button class="prev-book"><i class="fas fa-chevron-left"></i></button>
-        <button class="next-book"><i class="fas fa-chevron-right"></i></button>
+        Alam Sekitar
+        <p><a href="kategori\Alam\alam.html">Lihat Semua</a></p>
+        <button class="prev-book-env"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-book-env"><i class="fas fa-chevron-right"></i></button>
     </h2>
-    <div class="book-slider">
-        <div class="book-list">
-            <!-- List buku ditampilkan di sini -->
-            <div class="book-list">
-                <!-- Buku 1 -->
-                <div class="book" 
-                    data-info="Tiwi gajah yang mempunyai belalai panjang. Tiwi senang bisa membantu orang dengan belalainya."
-                    data-author="Endri Kris Junprihatina"
-                    data-halaman="16"
-                    data-ilustrator="Hutami Dwijayanti"
-                    data-kategori="Hewan"
-                    data-url="https://api.bookbotkids.workers.dev/books/2fb5783e-7814-4e21-b422-e384408e64a7/Belalai%20Tiwi.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Belalai Tiwi/belalai_tiwi.html"
-                    onclick="showBookPopup('file/buku/Belalai Tiwi.png', 'Belalai Tiwi', 'Endri Kris Junprihatina', 'Informasi tambahan mengenai buku 1.', '16', 'URL_Buku_1', 'ilustrator 1', 'Kategori 1', 'URL 1', 'lisensi 1')">
-                    <div class="book-cover">
-                        <img src="Buku/Belalai Tiwi/Belalai Tiwi_page-0001.jpg" alt="Buku 1">
-                    </div>
-                    <p class="book-title">Belalai Tiwi</p>
-                </div>
+    <div class="book-slider-env">
+        <div class="book-list-env">
+            <!-- List buku alam sekitar ditampilkan di sini -->
+            <!-- Silakan tambahkan buku-buku alam sekitar di sini -->
 
-                <!-- Buku 2 -->
-                <div class="book" 
-                    data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
-                    data-author="Fongsamay Phommaxay"
-                    data-halaman="10"
-                    data-ilustrator="Nivong Sengsakoun"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Aku Sayang Ibu/aku_sayang_ibu.html"
-                    onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
-                    <div class="book-cover">
-                        <img src="Buku/Aku Sayang Ibu/Aku Sayang Ibu_page-0001.jpg" alt="Buku 2">
-                    </div>
-                    <p class="book-title">Aku Sayang Ibu</p>
-                </div>
-
-                <!-- Buku 3 -->
-                <div class="book" 
-                    data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
-                    data-author="Nimmy Chacko" 
-                    data-halaman="12"
-                    data-ilustrator="Lavania Naidu"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Bersama Sahabat/bersama_sahabat.html"
-                    onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
-                    <div class="book-cover">
-                        <img src="Buku/Bersama Sahabat/Bersama Sahabat_page-0001.jpg" alt="Buku 3">
-                    </div>
-                    <p class="book-title">Bersama Sahabat</p>
-                </div>
-
-                <!-- Buku 4 -->
-                <div class="book" 
-                    data-info="Zara adalah seorang peneliti mikroba. Ia mencari mikroba baru dan menguji bagaimana mereka bereaksi terhadap berbagai media." 
-                    data-author="Bel Richardson" 
-                    data-halaman="12"
-                    data-ilustrator="Jemma Jose"
-                    data-kategori="Sains"
-                    data-url="https://api.bookbotkids.workers.dev/books/27943cbb-61c1-484c-9ddb-7106d4db1885/Mikroorganisme.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Mikroorganisme/Mikroorganisme.html"
-                    onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Penulis Buku 4', 'Informasi tambahan mengenai buku 4.', '50', 'URL_Buku_4', 'ilustrator 4', 'Kategori 4', 'URL 4', 'lisensi 4')">
-                    <div class="book-cover">
-                        <img src="Buku/Mikroorganisme/Mikroorganisme_page-0001.jpg" alt="Buku 4">
-                    </div>
-                    <p class="book-title">Mikroorganisme</p>
-                </div>
-
-                <div class="book" 
-                    data-info="Abdul membuat apam gosong dan apam cantik untuk dibagikan di festival Rajab. Apam gosong untuk dimakan sendiri. Kalau kamu jadi Abdul, kamu akan makan apam yang mana?" 
-                    data-author="Kiki Putri" 
-                    data-halaman="15"
-                    data-ilustrator="Divina Ariadini"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/f6f6a787-59c0-494f-a2ca-25f8de79955e/Membuat%20Apam.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Membuat Apam/Membuat Apam.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku/Membuat Apam/Membuat Apam_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Membuat Apam</p>
-                </div>
-
-                <!-- Buku 5 -->
-                <div class="book" 
-                    data-info="Talas mencari tempat untuk tidur dan akhirnya menemukan pohon yang bagus." 
-                    data-author="Paul Kennedy" 
-                    data-halaman="12"
-                    data-ilustrator="Graham Paterson"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/ef5f6eff-d823-494e-97d6-96e4bdebf8f2/Tempat%20Bermimpi%20Indah.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Tempat Bermimpi Indah/tempat_bermimpi_indah.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku/Tempat Bermimpi Indah/Tempat Bermimpi Indah_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Tempat Bermimpi Indah</p>
-                </div>  
-
-                <div class="book" 
-                    data-info="Poki mencari rumah, dan akhirnya menemukan satu yang cocok. Tapi teman-temannya juga ikut datang." 
-                    data-author="Anisa Nada Sukmono" 
-                    data-halaman="15"
-                    data-ilustrator="Anisa Nada Sukmono"
-                    data-kategori="Hewan"
-                    data-url="https://api.bookbotkids.workers.dev/books/7161924a-50a0-4157-aebb-2158c08abcee/Poki%20Mencari%20Rumah.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Poki Mencari Rumah/poki_mencari_rumah.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku/Poki Mencari Rumah/Poki Mencari Rumah_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Poki Mencari Rumah</p>
-                </div>  
-
-                <div class="book" 
-                    data-info="Celengan dari Ayah membantuku membeli seragam untuk teman baruku. Celengan ini telah mengajarkanku bagaimana pentingnya menabung." 
-                    data-author="Khrisna Sarbah" 
-                    data-halaman="18"
-                    data-ilustrator="Umesh Chaudhary"
-                    data-kategori="Kehidupan"
-                    data-url="https://api.bookbotkids.workers.dev/books/d039e320-accc-4d38-85f8-756f7348563d/Celengan.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Celengan/celengan.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku/Celengan/Celengan_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Celengan</p>
-                </div>  
-
-                <div class="book" 
-                    data-info="Yaki dan kawan-kawan menemukan rerimbunan rambutan, namun ternyata itu adalah jebakan yang dipasang oleh pemilik rerimbunan tersebut. Yaki berhasil melarikan diri dan menemukan rerimbunan rambutan lain untuk dimakan." 
-                    data-author="Laksmi Manohara" 
-                    data-halaman="18"
-                    data-ilustrator="Sari Dewi"
-                    data-kategori="Hewan"
-                    data-url="https://api.bookbotkids.workers.dev/books/051e64ca-fd6e-4637-ae72-697790e40b33/Buah%20untuk%20Yaki.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Buah untuk Yaki/buah_untuk_yaki.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku\Buah untuk Yaki\Buah untuk Yaki_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Buah untuk Yaki</p>
-                </div>   
-                <div class="book" 
-                    data-info="Tito dan Rika jalan-jalan dengan sosok hijau dan berbagai makhluk di planet dan angkasa, dan akhirnya pulang ke bumi." 
-                    data-author="Kim Ann Arun" 
-                    data-halaman="16"
-                    data-ilustrator="Seat Sopheap"
-                    data-kategori="Petualangan"
-                    data-url="https://api.bookbotkids.workers.dev/books/b6d993b1-5491-4d9c-a58b-de4c02b023f2/Petualangan%20Menakjubkan.pdf"
-                    data-lisensi="CC BY-NC 4.0."
-                    data-page="Buku/Petualangan Menakjubkan/petualangan_menakjubkan.html"
-                    onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
-                    <div class="book-cover">
-                        <img src="Buku/Petualangan Menakjubkan/Petualangan Menakjubkan_page-0001.jpg" alt="Buku 5">
-                    </div>
-                    <p class="book-title">Petualangan Menakjubkan</p>
-                </div>   
+        <!-- Buku 2 -->
+        <div class="book" 
+            data-info="Niran dan teman-temannya sedang mengamati Buaya Siam untuk penelitian. Sampai suatu malam, Niran berhasil melihat Buaya Siam yang hampir punah itu!"
+            data-author="The Asia Foundation - Let's Read"
+            data-halaman="12"
+            data-ilustrator="Khoem La"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/41f94c35-6141-4fb9-85de-5107340986db/Ke%20Mana%20Monster%20Sungai%20Mengembara?.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku\Ke Mana Monster Sungai Mengembara\monster_sungaimengembara.html"
+            data-download="https://drive.google.com/file/d/1xKD5c8YeFAifX-yS43EAvYiWR86V0tB0/view?usp=drive_link"
+            onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
+            <div class="book-cover">
+                <img src="../../Buku/Ke Mana Monster Sungai Mengembara/Ke Mana Monster Sungai Mengembara_page-0001.jpg" alt="Buku 2">
             </div>
+            <p class="book-title">Ke Mana Monster Sungai Mengembara?</p>
+        </div>
+
+        <!-- Buku 3 -->
+        <div class="book" 
+            data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
+            data-author="Amrin Pisey" 
+            data-halaman="16"
+            data-ilustrator="Yam Luy Chhuy"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/c4955e1f-7088-48e2-9013-941fef1184e7/Sampah%20Biji%20Lengkeng.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku\Sampah Biji Lengkeng\sampah_biji_lengkeng.html"
+            data-download="https://drive.google.com/file/d/18TEm08A7SFy5aKjuIvaplBRPPmX8_0Sj/view?usp=drive_link"
+            onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
+            <div class="book-cover">
+                <img src="../../Buku/Sampah Biji Lengkeng/Sampah Biji Lengkeng_page-0001.jpg" alt="Buku 3">
+            </div>
+            <p class="book-title">Sampah Biji Lengkeng</p>
+        </div>
+
+        <!-- Buku 4 -->
+        <div class="book" 
+            data-info="Aku botol plastik. Aku pergi ke pantai bersama Rina, tetapi kami harus berlari ke mobil ketika badai datang." 
+            data-author="Mustika Desi Harjani" 
+            data-halaman="16"
+            data-ilustrator="Ratra Adya Airawan"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/d7326ec5-87d9-4256-a544-cac354e0b734/Petualangan%20Botol%20Plastik.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Petualangan Botol Plastik/petualangan_botol_plastik.html"
+            data-download="https://drive.google.com/file/d/1v6_dKXI15TqtrQuEGGOojEY7O0JToPDr/view?usp=drive_link"
+            onclick="showBookPopup('file/buah ajaib.jpg', 'Judul Buku 4', 'Penulis Buku 4', 'Informasi tambahan mengenai buku 4.', '50', 'URL_Buku_4', 'ilustrator 4', 'Kategori 4', 'URL 4', 'lisensi 4')">
+            <div class="book-cover">
+                <img src="../../Buku/Petualangan Botol Plastik/Petualangan Botol Plastik_page-0001.jpg">
+            </div>
+            <p class="book-title">Petualangan Botol Plastik</p>
+        </div>
+
+        <div class="book" 
+            data-info="Miguel menulis pesan di pasir agar perusahaan tambang berhenti membuang limbah. Pesan itu selalu dihapus oleh ombak, tapi Miguel tidak menyerah dan terus menulis." 
+            data-author="Charmaine Aserappa" 
+            data-halaman="16"
+            data-ilustrator="Roel Obemio"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/ad60605b-1cd4-47e8-a09d-225d1c2c0b4e/Pesan%20di%20Atas%20Pasir.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Pesan di Atas Pasir/pesan_diatas_pasir.html"
+            data-download="https://drive.google.com/file/d/1xwbpdYy7tWKk2JhGFbdmbt2XOCtzqnDl/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Pesan di Atas Pasir/Pesan di Atas Pasir_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Pesan di Atas Pasir</p>
+        </div>
+
+        <div class="book" 
+            data-info="Gugu si gunung berapi sedang tidak sehat dan akhirnya meletus. Seluruh masyarakat dan hewan di sekitar Gugu harus segera menyelamatkan diri." 
+            data-author="Nindia Maya" 
+            data-halaman="15"
+            data-ilustrator="Evieriel N. Primadani"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/8568e46d-e57e-4150-bbed-a39c560fddd7/Ada%20Apa%20dengan%20Gugu?.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Ada Apa dengan Gugu/adaapa_dgngugu.html"
+            data-download="https://drive.google.com/file/d/1Zln69D_GbNy95xqAHFF0r_1X8e9UGENe/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Ada Apa dengan Gugu/Ada Apa dengan Gugu_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Ada Apa dengan Gugu?</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Yuyu suka makan apapun, termasuk serangga. Suatu hari, Momo mengetahui bahwa Yuyu adalah seorang ibu dan memiliki banyak bayi. Momo memutuskan untuk membangun rumah yang lebih besar untuk mereka semua." 
+            data-author="Momon Kristyadi" 
+            data-halaman="15"
+            data-ilustrator="Lyly Young"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/d35b2c0c-baba-4a03-9131-b21a8c860472/Momo%20dan%20Yuyu.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Momo dan Yuyu/momodanyuyu.html"
+            data-download="https://drive.google.com/file/d/1sh_CM_fHjzMONSuTqTM2om2LcOqPNBPw/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Momo dan Yuyu/Momo dan Yuyu_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Momo dan Yuyu</p>
+        </div>  
+
+        <div class="book" 
+            data-info="Dina suka buang sampah sembarangan. Saat dia bangun esok harinya, awan sampah mengikutinya ke sekolah. Lalat menyukainya, tapi Dina tidak." 
+            data-author="Karanjeet Kaur" 
+            data-halaman="12"
+            data-ilustrator="Bhavana Vyas Vipparthi"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/e7befef3-918c-4fa5-a7a2-8b4652eb8209/Penyampah.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Penyampah/penyampah.html"
+            data-download="https://drive.google.com/file/d/1XHwnXvtpO8Q-IGfbyt-K4YjCofcMl3jT/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Penyampah/Penyampah_page-0001.jpg" alt="Penyampah">
+            </div>
+            <p class="book-title">Penyampah</p>
+        </div>   
+        <div class="book" 
+            data-info="Belalang, Katak, dan Jangkrik sedang bermain di padang rumput yang hijau. Suatu hari, teman-teman Belalang jatuh sakit. Belalang bermain sendirian. Keesokan harinya, teman-teman Belalang sudah tidak ada lagi di padang rumput." 
+            data-author="Kong Sok Keng" 
+            data-halaman="15"
+            data-ilustrator="Hin Koemyean"
+            data-kategori="Alam"
+            data-url="https://api.bookbotkids.workers.dev/books/7f8b37c8-54df-4554-a068-0ab0d060e99f/Belalang%20Angkat%20Suara.pdf"
+            data-lisensi="CC BY-NC 4.0."
+            data-page="../../Buku/Belalang Angkat Suara/belalang_angkatsuara.html"
+            data-download="https://drive.google.com/file/d/1tG62QdqfyscQFEML4wvw84CJ5ljw9QOK/view?usp=drive_link"
+            onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+            <div class="book-cover">
+                <img src="../../Buku/Belalang Angkat Suara/Belalang Angkat Suara_page-0001.jpg" alt="Buku 5">
+            </div>
+            <p class="book-title">Belalang Angkat Suara</p>
+        </div>   
+
         </div>
     </div>
 </div>
+
+<!-- Daftar Buku Hiburan -->
+<div class="funny-books">
+    <h2>
+        Hiburan
+        <p><a href="kategori/Lucu/lucu.html">Lihat Semua</a></p>
+        <button class="prev-book-funny"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-book-funny"><i class="fas fa-chevron-right"></i></button>
+    </h2>
+    <div class="book-slider-funny">
+        <div class="book-list-funny">
+            <!-- List buku yang menghibur ditampilkan di sini -->
+            <!-- Silakan tambahkan buku-buku yang menghibur di sini -->
+            <!-- Buku 1 -->
+            <div class="book" 
+                data-info="Kinan dan Kale hendak memetik jambu biji, tetapi sudah ada yang duluan menggigit jambu itu. Mereka memutuskan untuk menangkap si penggigit jambu" 
+                data-author="Dewi Cholidatul" 
+                data-halaman="19"
+                data-ilustrator="Felishia"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/3f312bd9-b3d4-4f7f-b5a0-677cf21b783c/Gigitan-Siapa_ind_LANDSCAPE_V12024.04.03T130229+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Gigitan Siapa\gigitan_siapa.html"
+                data-download="https://drive.google.com/file/d/1Ad1krkjPhjz6QF55rbTOYTUpT1qa2L4Y/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Gigitan Siapa/Gigitan Siapa_page-0001.jpg" alt="Buku 7">
+                </div>
+                <p class="book-title">Gigitan Siapa?</p>
+            </div>  
+
+
+            <!-- Buku 2 -->
+            <div class="book" 
+                data-info="Gara-gara adik kembarnya, Mora sering terlambat datang ke tempat latihan. Mora pun merancang taktik agar dia bisa berangkat tepat waktu."
+                data-author="Nancy Duma"
+                data-halaman="23"
+                data-ilustrator="Valentina Kris Utami"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/76f61414-e590-42bb-9473-46a68e3522f5/Taktik-Jitu_ind_LANDSCAPE_V12024.04.03T092326+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Taktik Jitu\taktik_jitu.html"
+                data-download="https://drive.google.com/file/d/1UHpwEWXV8wkKr3AmUgByZF5Cp6uhJpAw/view?usp=drive_link"
+                onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Taktik Jitu/Taktik Jitu_page-0001.jpg" alt="Buku 2">
+                </div>
+                <p class="book-title">Taktik Jitu</p>
+            </div>
+
+                <!-- Buku 3 -->
+            <div class="book" 
+                data-info="Gul bangun pada hari ulang tahunnya dan menemukan roket menunggunya di luar. Gul naik roket dan berangkat ke rumah barunya di stasiun luar angkasa. Gul menjelajahi stasiun dan kemudian kembali ke Bumi." 
+                data-author="Gin Teguh" 
+                data-halaman="16"
+                data-ilustrator="Naafi Nur Rohma"
+                data-kategori="Lucu"
+                data-url="https://api.bookbotkids.workers.dev/books/92ecf5f4-a975-41a7-b140-12ad29a7c74e/Monster,%20Kembalikan%20Kucingku!.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Monster, Kembalikan Kucingku!\monster_kembalikan_kucingku.html"
+                data-download="https://drive.google.com/file/d/1xULfe5YcNcRXAVTzzpX3kGJhd5Z-Lpfk/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Monster, Kembalikan Kucingku!/Monster, Kembalikan Kucingku!_page-0001.jpg" alt="Buku 5">
+                </div>
+                <p class="book-title">Monster, Kembalikan Kucingku!</p>
+            </div>  
+
+            <!-- Buku 4 -->
+            <div class="book" 
+                data-info="Sepatu dipakai di tangan dan sarung tangan di kaki! Apakah yang sedang terjadi? Hari Berlawanan tentu saja!" 
+                data-author="Sheelu Karmacharya" 
+                data-halaman="7"
+                data-ilustrator="Binita Buddhacharya"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/0d40f7dc-975a-417f-b23a-d72dc64fb1ee/%E0%A4%89%E0%A4%B2%E0%A5%8D%E0%A4%9F%E0%A5%8B-%E0%A4%AA%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%9F%E0%A5%8B_ind_LANDSCAPE_V12024.04.03T210433+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Hari Berlawanan\hari_berlawanan.html"
+                data-download="https://drive.google.com/file/d/1Jshh2NBgZhaA3c1Yi3mFiQIALnBWOOKS/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Hari Berlawanan/Hari Berlawanan_page-0001.jpg" alt="Buku 5">
+                </div>
+                <p class="book-title">Hari Berlawanan</p>
+            </div> 
+            
+            <div class="book" 
+                data-info="Nina ingin tahu apa yang ditunggu Kak Aldi di teras. Semua pedagang makanan sudah lewat, tetapi tak ada yang dipanggilnya. Apa yang ingin dimakan Kak Aldi?"
+                data-author="B.E. Priyanti" 
+                data-halaman="19"
+                data-ilustrator="Naafi Nur Rohma"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/879440b3-1956-4539-b7f6-996750209884/Ngenteni-Apa,-Mas_ind_LANDSCAPE_V12024.04.03T144901+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Menunggu Apa, Mas\menunggu_apa.html"
+                data-download="https://drive.google.com/file/d/1QeRMldavj8R7wW3RcP4zSxfl9Ml6ThKR/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Menunggu Apa, Mas/Menunggu Apa, Mas_page-0001.jpg" alt="Buku 9">
+                </div>
+                <p class="book-title">Menunggu Apa, Mas?</p>
+            </div>   
+                    
+            <div class="book" 
+                data-info="Mehung belajar bahwa penting untuk bertanya sebelum membantu orang lain, setelah beberapa kali mencoba membantu berakhir dengan bencana." 
+                data-author="Rachmad Ridduan" 
+                data-halaman="16"
+                data-ilustrator="Ratna Kusuma"
+                data-kategori="Hewan"
+                data-url="https://api.bookbotkids.workers.dev/books/3519c259-ef35-43e5-a3ad-bf570612940d/Bukan%20Begitu%20Caranya,%20Mehung!.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Bukan Begitu Caranya, Mehung!\bukan_begitu_mehung.html"
+                data-download="https://drive.google.com/file/d/1PAdu3HjQXk4i4bxLOLt7ZQP1pxq4W-WC/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Bukan Begitu Caranya, Mehung!/Bukan Begitu Caranya, Mehung!_page-0001.jpg" alt="Buku 8">
+                </div>
+                <p class="book-title">Bukan Begitu Caranya, Mehung!</p>
+            </div>  
+
+            <div class="book" 
+                data-info="Sophy kepanasan, dan kipas angin kecil di sampingnya tidak terlalu membantu. Akankah Sophy merasa lebih baik jika kipas angin itu jauh lebih besar? Simak apa yang menurut Sophy akan terjadi jika kipasnya jauh lebih besar lagi." 
+                data-author="Iem Tithseiha" 
+                data-halaman="14"
+                data-ilustrator="Iem Tithseiha Chan Pisey Pisey Chan"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/92239d7c-fe7e-49dc-810e-336659d19619/%E1%9E%9A%E1%9E%BF%E1%9E%84-%E1%9E%80%E1%9E%84%E1%9F%92%E1%9E%A0%E1%9E%B6%E1%9E%9A%E1%9E%99%E1%9E%80%E1%9F%92%E1%9E%9F_ind_LANDSCAPE_V12024.04.03T171106+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Kipas Angin Raksasa\kipas_raksasa.html"
+                data-download="https://drive.google.com/file/d/1jy3oeko9skGnskmKtcfgYFX0cBoLkf1C/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Kipas Angin Raksasa/Kipas Angin Raksasa_page-0001.jpg" alt="Buku 8">
+                </div>
+                <p class="book-title">Kipas Angin Raksasa</p>
+            </div>  
+
+            <div class="book" 
+                data-info="Ketika seekor tikus masuk ke dalam rumah, terjadi kekacauan. Simak petualangan yang penuh aksi ini." 
+                data-author="Sowmya Rajendran" 
+                data-halaman="10"
+                data-ilustrator="Tanaya Vyas"
+                data-kategori="Lucu"
+                data-url="https://storage.googleapis.com/lets-read-asia/pdfs/9130bb8c-2d49-4bc6-90a8-6b56cb33b955/Mouse-in-the-House_ind_LANDSCAPE_V12024.04.03T173205+0000.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Lucu\Tikus di Dalam Rumah\tikus_dirumah.html"
+                data-download="https://drive.google.com/file/d/16z5itxLFJzSgQ_KnDsZdBmWZXRFxGo8x/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Lucu/Tikus di Dalam Rumah/Tikus di Dalam Rumah_page-0001.jpg" alt="Buku 10">
+                </div>
+                <p class="book-title">Tikus di Dalam Rumah</p>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<!-- Daftar Buku tentang Keluarga dan Persahabatan -->
+<div class="family-friend-books">
+    <h2>
+        Keluarga dan Persahabatan
+        <p><a href="kategori/Keluarga&Sahabat/keluarga&sahabat.html">Lihat Semua</a></p>
+        <button class="prev-book-ff"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-book-ff"><i class="fas fa-chevron-right"></i></button>
+    </h2>
+    <div class="book-slider-ff">
+        <div class="book-list-ff">
+            <!-- List buku tentang keluarga dan persahabatan ditampilkan di sini -->
+            <!-- Silakan tambahkan buku-buku tentang keluarga dan persahabatan di sini -->
+                    <!-- Buku 1 -->
+            <div class="book" 
+                data-info="Aura adalah sahabat terdekat bagi aku. Kami berbagi hampir segala hal. Aura juga selalu mendukung aku untuk terus belajar hal baru." 
+                data-author="Nimmy Chacko" 
+                data-halaman="12"
+                data-ilustrator="Lavania Naidu"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://api.bookbotkids.workers.dev/books/ea5a8dac-c619-4800-8fc4-7707a7f6992b/Bersama%20Sahabat.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Bersama Sahabat\bersama_sahabat.html"
+                data-download="https://drive.google.com/file/d/1lnIktfaKlmr177y--FHnN81waQMNBWnF/view?usp=drive_link"
+                onclick="showBookPopup('file/hutanhantu.jpg', 'Judul Buku 3', 'Penulis Buku 3', 'Informasi tambahan mengenai buku 3.', '30', 'URL_Buku_3', 'ilustrator 3', 'Kategori 3', 'URL 3', 'lisensi 3')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Bersama Sahabat/Bersama Sahabat_page-0001.jpg" alt="Buku 3">
+                </div>
+                <p class="book-title">Bersama Sahabat</p>
+            </div>
+
+            <!-- Buku 2 -->
+            <div class="book" 
+                data-info="Ibu sibuk bekerja, tapi aku pun belajar berbagai hal dari Ibu. Ibu adalah guru terbaikku."
+                data-author="Fongsamay Phommaxay"
+                data-halaman="10"
+                data-ilustrator="Nivong Sengsakoun"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://api.bookbotkids.workers.dev/books/d2e2f649-af0f-4956-85a5-d0bf9e229938/Aku%20Sayang%20Ibu.pdf"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Aku Sayang Ibu\aku_sayang_ibu.html"
+                data-download="https://drive.google.com/file/d/1KKvPyN75eRvQYxgiHol_MqeE4i4d8h0w/view?usp=drive_link"
+                onclick="showBookPopup('file/timunmas.jpg', 'Judul Buku 2', 'Penulis Buku 2', 'Informasi tambahan mengenai buku 2.', '20', 'URL_Buku_2', 'ilustrator 2', 'Kategori 2', 'URL 2', 'lisensi 2')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Aku Sayang Ibu/Aku Sayang Ibu_page-0001.jpg" alt="Buku 2">
+                </div>
+                <p class="book-title">Aku Sayang Ibu</p>
+            </div>
+
+
+            <!-- Buku 3 -->
+            <div class="book" 
+                data-info="Kiara senang sekali dibuatkan rumah pohon oleh Ayah. Kiara bisa mengamati burung dari situ. Namun, bagaimana caranya Kiara membawa barang-barangnya ke atas?" 
+                data-author="Tyas KW" 
+                data-halaman="27"
+                data-ilustrator="Hanifah Fatharani"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/aaaeafde-e4dc-4021-a511-558724ff8615?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Di Rumah Pohon\dirumah_pohon.html"
+                data-download="https://drive.google.com/file/d/1yHzUJ034EsOjbZmcZy-k3c7VVcl8v467/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Di Rumah Pohon/Di Rumah Pohon_page-0001.jpg" alt="Buku 5">
+                </div>
+                <p class="book-title">Di Rumah Pohon</p>
+            </div>  
+
+            <!-- Buku 4 -->
+            <div class="book" 
+                data-info="Langit malam hari penuh dengan bintang. Bagaimana jika kamu dapat membuat bintangmu sendiri? Mari lihat caranya." 
+                data-author="Room to Read" 
+                data-halaman="8"
+                data-ilustrator="Vongsavanh Damlongsouk"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/2dae7d26-9113-4a7d-a9e2-7101755eec57?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Bintang Kecil Ali\bintang_kecil.html"
+                data-download="https://drive.google.com/file/d/1INdN9Pzs6d8UgtkoiKTrMthSpVLBqvEo/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Bintang Kecil Ali/Bintang Kecil Ali_page-0001.jpg" alt="Buku 5">
+                </div>
+                <p class="book-title">Bintang Kecil Ali</p>
+            </div>   
+
+            <div class="book" 
+                data-info="Nenek berulang tahun ke 70 hari ini. Apa yang diperbuat keluarganya untuk Nenek?"
+                data-author="Sommoa Panyavong" 
+                data-halaman="12"
+                data-ilustrator="Vravong Phrachanh"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/bc3634c4-cea0-4378-9a09-f1ddd39338e0?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Upacara Baci Untuk Nenek\upacara_baci.html"
+                data-download="https://drive.google.com/file/d/18kRij3_7m77xQQeaXtlk0-BkNTzoZ4lK/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Upacara Baci Untuk Nenek/Upacara Baci Untuk Nenek_page-0001.jpg" alt="Buku 5">
+                </div>
+                <p class="book-title">Upacara Baci Untuk Nenek</p>
+            </div>  
+
+            <div class="book" 
+                data-info="Tak sengaja Yesi menabrak Dadong Sari. Barang-barang bawaannya berhamburan. Yesi harus membantu Dadong mengumpulkan dan membawa barang-barang itu." 
+                data-author="Kabul Astuti" 
+                data-halaman="23"
+                data-ilustrator="Anglika Dewi"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/f3c39131-8cc9-44ea-8b9d-712ab27a87c1?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Dadong Perkasa\dadong_perkasa.html"
+                data-download="https://drive.google.com/file/d/1vibY7asfULL5C8JYjdTnFAV6zUTObM7p/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Dadong Perkasa/Dadong Perkasa_page-0001.jpg" alt="Buku 7">
+                </div>
+                <p class="book-title">Dadong Perkasa</p>
+            </div>  
+
+            <div class="book" 
+                data-info="Alia dan Bagas harus tinggal bersama Mbah Kung. Tak ada Ibu, mereka mengira akan bebas bermain sesuka hati. Alia dan Bagas juga merindukan masakan Ibu. Kapan Ibu pulang?" 
+                data-author="Veronica W" 
+                data-halaman="24"
+                data-ilustrator="Nur Shanti Indriani"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/a3e9d5c7-2724-4709-8498-6bbcea65666c?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Kapan Ibu Pulang\kapan_ibu_pulang.html"
+                data-download="https://drive.google.com/file/d/16_bdWWtLrWErr72s9YCDH6_6iRmypvpv/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Kapan Ibu Pulang/Kapan Ibu Pulang_page-0001.jpg" alt="Buku 8">
+                </div>
+                <p class="book-title">Kapan Ibu Pulang?</p>
+            </div>  
+
+            <div class="book" 
+                data-info="Kolam ikan Kakek meluap! Eneng harus menangkap ikan-ikan yang hanyut ke sungai. Mengapa kolam ikan Kakek meluap?"
+                data-author="Ammy Ramdhania " 
+                data-halaman="24"
+                data-ilustrator="Mel Darmawan"
+                data-kategori="Keluarga & Sahabat"
+                data-url="https://www.letsreadasia.org/read/42a4e059-8ea1-45f1-9444-3f0bb63a19c4?bookLang=6260074016145408"
+                data-lisensi="CC BY-NC 4.0."
+                data-page="../../kategori\Keluarga&Sahabat\Kolam Ikan Kakek\kolam_kakek.html"
+                data-download="https://drive.google.com/file/d/1G3ooKf46itaoTBvG1a4C6QsPIpIXjYDH/view?usp=drive_link"
+                onclick="showBookPopup('file/misteri kunci.jpg', 'Judul Buku 5', 'Penulis Buku 5', 'Informasi tambahan mengenai buku 5.', '50', 'URL_Buku_5', 'ilustrator 5', 'Kategori 5', 'URL 5', 'lisensi 5')">
+                <div class="book-cover">
+                    <img src="../../kategori/Keluarga&Sahabat/Kolam Ikan Kakek/Kolam Ikan Kakek_page-0001.jpg" alt="Buku 9">
+                </div>
+                <p class="book-title">Kolam Ikan Kakek</p>
+            </div>   
+
+        </div>
+    </div>
+</div>
+
 
 
 <!-- Pop-up Box -->
