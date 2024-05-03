@@ -1,5 +1,27 @@
+/* CSS untuk tombol Buat Profil, Ubah Profil, dan Simpan */
+.btn-primary {
+    background-color: #28a745 !important; /* Warna hijau */
+    border-color: #28a745 !important; /* Warna border hijau */
+    color: #fff !important; /* Warna teks putih */
+}
+
+.btn-primary:hover {
+    background-color: #218838 !important; /* Warna hijau yang sedikit lebih gelap saat dihover */
+    border-color: #218838 !important; /* Warna border hijau saat dihover */
+}
+
+
+/* CSS untuk tombol Hapus Profil */
+.btn-danger,
+.btn-danger:hover {
+    background-color: red !important;
+    border-color: red !important;
+}
+
+
 /* CSS untuk Profil */
 .profil-container {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +66,7 @@
     top: 90px; /* Mengatur jarak dari atas gambar */
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 60px;
     padding: 5px 10px; 
     font-weight: 500;
     font-size: 24px;
@@ -145,4 +168,19 @@
     top: 150px; /* Mengatur jarak dari atas gambar */
     right: 400px; /* Mengatur jarak dari kanan gambar */
     z-index: 1; /* Menempatkan tombol di depan gambar */
+}
+
+/* CSS untuk memposisikan tombol di tengah */
+.profil-container .create-profile-button button {
+    margin-top: 20px; /* Menambahkan jarak di atas tombol */
+}
+
+/* CSS untuk menyesuaikan lebar tombol */
+.create-profile-button button {
+    width: 280px;
+}
+
+/* CSS untuk mengatur jarak antar tombol */
+.create-profile-button button:not(:last-child) {
+    margin-right: 10px;
 }

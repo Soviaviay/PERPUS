@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('navbar-container').innerHTML = data;
 
             // Tandai tautan "Beranda" sebagai aktif
-            document.querySelector('a[href="home.html"]').classList.add('active');
+            document.querySelector('a[href="index.html"]').classList.add('active');
         });
 
     // Ambil elemen-elemen yang diperlukan setelah DOM siap
