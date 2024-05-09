@@ -1,7 +1,7 @@
 /* CSS untuk slider gambar */
 .slider-container {
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
     height: 400px; /* Sesuaikan tinggi banner sesuai kebutuhan Anda */
     position: relative;
     overflow: hidden;
@@ -639,8 +639,8 @@
 /* CSS untuk Kontainer Motivasi */
 .motivation-container {
     text-align: center;
-    margin-left: 15%; /* Memberikan jarak di kiri container */
-    margin-right: 15%;
+    margin-left: 8%; /* Memberikan jarak di kiri container */
+    margin-right: 8%;
 }
 
 .motivation-container h2 {
@@ -652,15 +652,23 @@
 
 .motivation-container h3 {
     font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.motivation-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .motivation-box {
-    display: inline-block;
+    width: 600px; /* Mengatur lebar relatif untuk kotak motivasi */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    margin: 20px;
-    width: 700px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
 }
 
 .quotation-mark {
@@ -684,7 +692,7 @@
     margin-bottom: 10px;
 }
 
-.teacher-details h3 {
+.teacher-details h4 {
     margin-bottom: 5px;
 }
 
